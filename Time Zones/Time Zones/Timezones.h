@@ -16,7 +16,7 @@ protected:
 	
 private:
 	double hourss, minutess, hours2, minutes2, t2;
-	string myArray[198];
+	string myArray[279];
 	bool found = false;
 public:
 	string wish;
