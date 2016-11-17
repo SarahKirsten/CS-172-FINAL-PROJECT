@@ -16,7 +16,7 @@ protected:
 	
 private:
 	double hourss, minutess, hours2, minutes2, t2;
-	string myArray[279];
+	string myArray[372];
 	bool found = false;
 	bool isAfterNoon = false;//check to see if time is after Noon, this will help for 12 hour format
 public:

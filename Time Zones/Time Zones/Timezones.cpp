@@ -7,7 +7,7 @@ void Timezones::fileinput()
 	ifstream file("Timezones.txt");//declaring existence and name of text file
 
 	if (file.is_open()) //opens file
-		for (int i = 0; i < 279; ++i)//loop reads non white space and stores it in array
+		for (int i = 0; i < 372; ++i)//loop reads non white space and stores it in array
 		{
 			file >> myArray[i];//the array the txt file is in
 		}
@@ -34,7 +34,7 @@ void Timezones::current() {
 }
 
 void Timezones::compare() {
-	for (int j = 0; j <= 279; j++)
+	for (int j = 0; j <= 372; j++)
 	{
 		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
