@@ -1,94 +1,93 @@
-+12 Kwajalein 
--11 MidwayAtoll 
-+14 Apia 
++12 Kwajalein 1
++14 Apia 0.39
 -10 Honolulu 1
 -09 Juneau 1
--10 Adak 
+-10 Adak 1
 -08 LosAngeles 1
 -08 SanDiego 1
 -08 Seattle 1
 -08 Spokane 1
--07 Calgary
+-07 Calgary 0.74
 -08 Phoenix 1
 -07 SaltLakeCity 1
 -06 Chicago 1
 -06 Dallas 1
--06 Guatemala  
--06 Winnipeg 
+-06 Guatemala 0.13
+-06 Winnipeg 0.74
 -06 NewOrleans 1
 -06 MexicoCity 1
--05 Bogota 
+-05 Bogota 0.00032
 -05 Boston 1
--05 Lima 
+-05 Lima 0.29
 -05 Miami 1
--05 Montreal 
+-05 Montreal 0.74
 -05 NewYork 1
--05 Toronto
--04 Caracas 
--04 LaPaz 
--04 Moncton 
--03 Santiago 
--03 BuenosAires 
--03 Montevideo 
--02 RiodeJaneiro 
--01 PontaDelgada
--01 Praia
-0 London 
-0 Dublin 
-0 Edinburgh 
-0 Reykjavik 
-0 Lisbon 
-0 Casablanca 
-+01 Amsterdam 
-+01 Berlin 
-+01 Bern 
-+01 Brussels 
-+01 Budapest 
-+01 Madrid 
-+01 Valletta
-+01 Prague 
-+01 Paris 
-+01 Rome 
-+01 Sarajevo 
-+01 Vienna 
-+01 Warsaw 
-+02 Athens 
-+02 Cairo 
-+02 Jerusalem 
-+03 Istanbul 
-+03 Baghdad 
-+03 Manama
-+02 Beirut 
-+03 Moscow 
-+03 Nairobi 
-+03 StPetersburg 
-+04 AbuDhabi 
-+04.5 Kabul 
-+03 Volgograd 
-+05.5 Calcutta 
-+05.5 Colombo 
-+05 Islamabad 
-+05.5 NewDelhi 
-0 Dakar
-+05.75 Kathmandu 
-+07 Bangkok 
-+07 Hanoi 
-+07 Jakarta 
-+08 Beijing 
-+08 HongKong 
-+08 Manila 
-+08 Perth 
-+08 Singapore 
-+08 Taipei 
-+09 Osaka 
-+09 Seoul 
-+09 Tokyo 
-+10 Brisbane 
-+10 Tamuning
-+11 Melbourne 
-+11 Sydney 
-+11 Honiara
-+13 Auckland 
-+13 Suva
-+12 Majuro
-+13 Wellington 
+-05 Toronto 0.74
+-04 Caracas 0.10
+-04 LaPaz 0.14
+-04 Moncton 0.74
+-03 Santiago 0.0015
+-03 BuenosAires 0.064
+-03 Montevideo 0.036
+-02 RiodeJaneiro 0.29
+-01 PontaDelgada 1.06
+-01 Praia 0.0097
+0 London 1.06
+0 Dublin 1.06
+0 Edinburgh 1.24
+0 Reykjavik 0.0088
+0 Lisbon 1.06
+0 Casablanca 0.10
++01 Amsterdam 1.06
++01 Berlin 1.06
++01 Bern 0.99
++01 Brussels 1.06
++01 Budapest 0.0034
++01 Madrid 1.06
++01 Valletta 1.06
++01 Prague 0.039
++01 Paris 1.06
++01 Rome 1.06
++01 Sarajevo 0.54
++01 Vienna 1.06
++01 Warsaw 0.24
++02 Athens 1.06
++02 Cairo 0.062
++02 Jerusalem 0.26
++03 Istanbul 0.30
++03 Baghdad 0.01
++03 Manama 2.65
++02 Beirut 0.00066
++03 Moscow 0.015
++03 Nairobi 0.0098
++03 StPetersburg 0.015
++04 AbuDhabi 0.27
++04.5 Kabul 0.01
++03 Volgograd 0.015
++05.5 Calcutta 0.015
++05.5 Colombo 0.00067
++05 Islamabad 0.0095
++05.5 NewDelhi 0.015
+0 Dakar 0.0016
++05.75 Kathmandu 0.0092
++07 Bangkok 0.028
++07 Hanoi 0.000045
++07 Jakarta 0.000075
++08 Beijing 0.15
++08 HongKong 0.13
++08 Manila 0.015
++08 Perth 0.74
++08 Singapore 0.70
++08 Taipei 0.031
++09 Osaka 0.0091
++09 Seoul 0.00085
++09 Tokyo 0.0091
++10 Brisbane 0.74
++10 Tamuning 1
++11 Melbourne 0.74
++11 Sydney 0.74
++11 Honiara 0.13
++13 Auckland 0.70
++13 Suva 0.48
++12 Majuro 1
++13 Wellington 0.70
