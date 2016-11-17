@@ -1,15 +1,14 @@
 /////////////////////////
 //Program Name: Final Team Project
-//Name: Bits, Please (Emily MacDonald, Sarah Kirsten, Anna Tran)
-//Class and Section: CS171-3
-//Date:4/29/2016
+//Name: 2b||!2b: Sarah Kirsten, Marnie Rimes, Anna Tran
+//Class and Section: CS172-1
+//Date:11/16/2016
 ///////////////////////
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <ctime>
 #include <iomanip>
-#include "Header.h"//Including header file
 #include "Timezones.h"//Including class for Timezones
 
 

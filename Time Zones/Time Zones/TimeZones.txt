@@ -1,68 +1,64 @@
-+12 Eniwetok 
 +12 Kwajalein 
--11 MidwayIsland 
-+13 Samoa 
--10 Honolulu  
--10 Hawaii  
--08 Juneau 
--09 Adak
--07 LosAngeles  
--07 SanDiego  
--07 Seattle  
--07 Spokane 
--06 Alberta  
--07 Phoenix 
--06 SaltLakeCity  
--05 Chicago  
--05 Dallas 
+-11 MidwayAtoll 
++14 Apia 
+-10 Honolulu 1
+-09 Juneau 1
+-10 Adak 
+-08 LosAngeles 1
+-08 SanDiego 1
+-08 Seattle 1
+-08 Spokane 1
+-07 Calgary
+-08 Phoenix 1
+-07 SaltLakeCity 1
+-06 Chicago 1
+-06 Dallas 1
 -06 Guatemala  
--05 Manitoba 
--05 NewOrleans 
--05 MexicoCity 
--05 Winnipeg 
--05 Bogota  
--04 Boston 
--05 Lima  
--04 Miami 
--04 Montreal 
--04 NewYork 
--04 Ontario 
--04 Caracas  
--04 LaPaz  
--03 Maritimes 
+-06 Winnipeg 
+-06 NewOrleans 1
+-06 MexicoCity 1
+-05 Bogota 
+-05 Boston 1
+-05 Lima 
+-05 Miami 1
+-05 Montreal 
+-05 NewYork 1
+-05 Toronto
+-04 Caracas 
+-04 LaPaz 
+-04 Moncton 
 -03 Santiago 
--03 Brazilia  
--03 BuenosAires  
--03 Montevideo  
--03 RiodeJanero  
-0 Azores 
+-03 BuenosAires 
+-03 Montevideo 
+-02 RiodeJaneiro 
+-01 PontaDelgada
 -01 Praia
-+01 London 
-+01 Dublin 
-+01 Edinburgh 
-0 Reykjavik  
-+01 Lisbon 
-+01 Casablanca
-+02 Amsterdam 
-+02 Berlin 
-+02 Bern 
-+02 Brussels 
-+02 Budapest 
-+02 Madrid 
-+02 Malta 
-+02 Prague 
-+02 Paris 
-+02 Rome 
-+02 Sarajevo 
-+02 Vienna 
-+02 Warsaw 
-+03 Athens 
+0 London 
+0 Dublin 
+0 Edinburgh 
+0 Reykjavik 
+0 Lisbon 
+0 Casablanca 
++01 Amsterdam 
++01 Berlin 
++01 Bern 
++01 Brussels 
++01 Budapest 
++01 Madrid 
++01 Valletta
++01 Prague 
++01 Paris 
++01 Rome 
++01 Sarajevo 
++01 Vienna 
++01 Warsaw 
++02 Athens 
 +02 Cairo 
-+03 Jerusalem 
++02 Jerusalem 
 +03 Istanbul 
 +03 Baghdad 
-+03 Bahrain 
-+03 Beirut 
++03 Manama
++02 Beirut 
 +03 Moscow 
 +03 Nairobi 
 +03 StPetersburg 
@@ -70,10 +66,10 @@
 +04.5 Kabul 
 +03 Volgograd 
 +05.5 Calcutta 
-+05.5 Colombo
++05.5 Colombo 
 +05 Islamabad 
 +05.5 NewDelhi 
-+06 Dhakar 
+0 Dakar
 +05.75 Kathmandu 
 +07 Bangkok 
 +07 Hanoi 
@@ -87,12 +83,12 @@
 +09 Osaka 
 +09 Seoul 
 +09 Tokyo 
-+10 Brisbane  
-+10 Guam  
-+10 Melbourne  
-+10 Sydney  
-+11 SolomonIsland  
-+12 Auckland  
-+12 Fiji  
-+12 MarshallIsland  
-+12 Wellington  
++10 Brisbane 
++10 Tamuning
++11 Melbourne 
++11 Sydney 
++11 Honiara
++13 Auckland 
++13 Suva
++12 Majuro
++13 Wellington 

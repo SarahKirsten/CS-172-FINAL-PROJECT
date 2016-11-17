@@ -18,9 +18,7 @@ private:
 	
 	bool found = false;
 public:
-	string wish;//wish wont work because in class?
-
-	/*void setWish();*/
+	string wish;
 	void fileinput();
 	void current();
 	void compare();
