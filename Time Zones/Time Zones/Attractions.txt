@@ -1,0 +1,93 @@
+Kwajalein
+Apia
+Honolulu 1Pearl Harbor 2Waikiki 3Lyon Arboretum 4Iolani Palace 5Ala Moana Park
+Juneau 1Mendenhall Glacier 2Tracy Arm Fjord 3Glacier Bay National Park 4Macaulay Salmon Hatchery 5Juneau-Douglas City Museum
+Adak 1Three Arm Bay 2Alaska Maritime National Wildlife Refuge 3Mt. Moffett 4Mt. Reed 5Aleutian Adventure Tours
+LosAngeles 1The Getty Center 2Universal Studios Hollywood 3Venice Beach 4Long Beach 5Griffith Observatory
+SanDiego 1USS Midway Museum 2San Diego Zoo 3Balboa Park 4La Jolla Cove 5SeaWorld
+Seattle 1Space Needle 2Pike Place Market 3Olympic Sculpture Park 4Woodland Park Zoo 5Pioneer Square Historic District 
+Spokane 1Manito Park 2Riverfront Park 3Green Bluff 4Mount Spokane 5Martin Woldson Theater at the Fox
+Calgary
+Phoenix 1Musical Instrument Museum 2Desert Botanical Garden 3Heard Museum 4Camelback Mountain 5South Mountain Park
+SaltLakeCity 1Big Cottonwood Canyon 2Family History Library 3Temple Square 4Natural History Museum of Utah 5LDS Conference Center
+Chicago 1The Art Institute of Chicago 2Millennium Park 3Cloud Gate 4Wrigley Field 5Museum of Science and Industry
+Dallas 1Arboretum & Botanical Gardens 2Morton H Meyerson Symphony Center 3Klyde Warren Park 4Dallas World Aquarium 5Dallas Museum of Art
+Guatemala
+Winnipeg
+NewOrleans 1The National WWII Museum 2St. Louis Cathedral 3Frenchman Street 4Jackson Square 5Garden District
+MexicoCity
+Bogota
+Boston 1Fenway Park 2Museum of Fine Arts 3Freedom Trail 4Boston Public Garden 5Boston Tea Party Ships & Museum
+Lima
+Miami 1Vizcaya Museum and Gardens 2Zoo Miami 3Wynwood Walls 4Marlins Park 5Bayside Marketplace
+Montreal
+NewYork 1Statue of Liberty 2Empire State Building 3Central Park 4Broadway and Shubert Alley 5Metropolitan Museum of Art
+Toronto
+Caracas
+LaPaz
+Moncton
+Santiago
+BuenosAires
+Montevideo
+RiodeJaneiro
+PontaDelgada
+Praia
+London 1Buckingham Palace 2The British Museum 3The Tower of London 4Big Ben and Parliament 5Westminster Abbey
+Dublin
+Edinburgh
+Reykjavik
+Lisbon
+Casablanca
+Amsterdam
+Berlin
+Bern
+Brussels
+Budapest
+Madrid
+Valletta
+Prague
+Paris 1Eiffel Tower 2Notre Dame 3Louvre Museum 4Arc de Triomphe 5Orsay Museum
+Rome
+Sarajevo
+Vienna
+Warsaw
+Athens
+Cairo
+Jerusalem
+Istanbul
+Baghdad
+Manama
+Beirut
+Moscow
+Nairobi
+StPetersburg
+AbuDhabi
+Kabul
+Volgograd
+Calcutta
+Colombo
+Islamabad
+NewDelhi
+Dakar
+Kathmandu 1Swayambhunath Temple 2Boudhanath 3Kopan Monastery 4Garden of Dreams 5Thamel
+Bangkok
+Hanoi
+Jakarta
+Beijing
+HongKong
+Manila
+Perth
+Singapore
+Taipei
+Osaka
+Seoul 1The War Memorial of Korea 2Gyeongbokgung Palace 3Bukhansan National Park 4Changdeokgung Palace 5National Museum of Korea
+Tokyo
+Brisbane
+Tamuning
+Melbourne
+Sydney
+Honiara
+Auckland
+Suva
+Majuro
+Wellington
