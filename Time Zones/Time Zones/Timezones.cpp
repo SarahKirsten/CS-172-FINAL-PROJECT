@@ -1,20 +1,13 @@
 #include "Timezones.h"
 
 
-
-//void Timezones::setWish()
-//{
-//	cout << "What city do you want to know th time of?" << endl;
-//	cin >> wish;
-//}
-
 void Timezones::fileinput()
 {
 
 	ifstream file("Timezones.txt");//declaring existence and name of text file
 
 	if (file.is_open()) //opens file
-		for (int i = 0; i < 198; ++i)//loop reads non white space and stores it in array
+		for (int i = 0; i < 372; ++i)//loop reads non white space and stores it in array
 		{
 			file >> myArray[i];//the array the txt file is in
 		}
@@ -41,7 +34,7 @@ void Timezones::current() {
 }
 
 void Timezones::compare() {
-	for (int j = 0; j <= 198; j++)
+	for (int j = 0; j <= 372; j++)
 	{
 		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
@@ -86,7 +79,7 @@ void Timezones::kabul() {
 	else cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << minutes2 << "." << endl;
 }
 
-void Timezones::calcutta() {
+void Timezones::calcutta() {//this is also for new delhi and colombo
 	hours2 = hourss + 7.0 + 5.0;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
 	minutes2 = minutess + 30;//Weird time zone of half an hour
 	if (minutes2 >= 60)//If minutes exceeds 60, displays properly
