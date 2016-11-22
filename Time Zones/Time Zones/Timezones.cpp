@@ -7,11 +7,11 @@ void Timezones::fileinput()
 	ifstream file("Timezones.txt");//declaring existence and name of text file
 
 	if (file.is_open()) //opens file
-		//while (!file.eof)//loop reads non white space and stores it in array
-		//{
-		//	//file >> myArray[i];//the array the txt file is in
-			file >> t2 >> city >> toUSD >> toCur;
-		//}
+		for (int i=0; i<372;i++)//loop reads non white space and stores it in array
+		{
+			file >> myArray[i];//the array the txt file is in
+			//file >> t2 >> city >> toUSD >> toCur;
+		}
 
 	file.close();//file closes
 }
@@ -41,21 +41,21 @@ void Timezones::hourFormat()
 	//if false, do math stuff to change it to numbers between 1 and 12;
 }
 
-//void Timezones::compare() {
-//	for (int j = 0; j <= 372; j++)
-//	{
-//		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
-//		{
-//			string time2 = myArray[j - 1];
-//			t2 = stoi(time2);
-//			found = true;
-//			break;
-//			//cout << "The UTC offset is: " << t2 << endl;
-//		}
-//	}
-//	if (!found)
-//		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
-//}
+void Timezones::compare() {
+	for (int j = 0; j <= 372; j++)
+	{
+		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
+		{
+			string time2 = myArray[j - 1];
+			t2 = stoi(time2);
+			found = true;
+			break;
+			//cout << "The UTC offset is: " << t2 << endl;
+		}
+	}
+	if (!found)
+		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
+}
 
 void Timezones::kathmandu() {
 	hours2 = hourss + 7.0 + 5.0;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
@@ -118,9 +118,11 @@ void Timezones::regular() {
 double Timezones::setCurToUSD(double toUSD)
 {
 	this->toUSD = toUSD;
+	return toUSD;
 }
 
 double Timezones::setUSDToCur(double toCur)
 {
 	this->toCur = toCur;
+	return toCur;
 }

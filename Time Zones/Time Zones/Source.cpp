@@ -25,7 +25,7 @@ int main()
 	Timezones city;
 	city.fileinput();
 	city.current();
-	//city.compare();
+	city.compare();
 	if (city.wish == "Kathmandu")//If specific city is Katmandu, because weird time zone
 	{
 		city.kathmandu();//calls function of kathmandu
