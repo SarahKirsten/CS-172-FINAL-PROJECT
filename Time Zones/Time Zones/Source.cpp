@@ -23,7 +23,6 @@
 int main()
 {
 	Timezones city;
-	/*city.setWish();*/
 	city.fileinput();
 	city.current();
 	//city.compare();

@@ -34,6 +34,13 @@ void Timezones::current() {
 	cin >> wish;//read in wanted city
 }
 
+
+void Timezones::hourFormat()
+{
+	//if true leave in 24 hour format for hours before 12
+	//if false, do math stuff to change it to numbers between 1 and 12;
+}
+
 //void Timezones::compare() {
 //	for (int j = 0; j <= 372; j++)
 //	{

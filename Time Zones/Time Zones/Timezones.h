@@ -30,6 +30,7 @@ public:
 	void fileinput();
 	void current();
 	//void compare();
+	void hourFormat();
 	void kathmandu();
 	void kabul();
 	void calcutta();
