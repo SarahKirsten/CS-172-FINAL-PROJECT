@@ -5,5 +5,6 @@
 
 class City
 {
-	public getAttractions(string name)
+public:
+	getAttractions(string name)
 };
