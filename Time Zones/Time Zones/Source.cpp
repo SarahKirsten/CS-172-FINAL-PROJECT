@@ -1,14 +1,4 @@
-/////////////////////////
-//Program Name: Final Team Project
-//Name: Bits, Please (Emily MacDonald, Sarah Kirsten, Anna Tran)
-//Class and Section: CS171-3
-//Date:4/29/2016
-///////////////////////
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <ctime>
-#include <iomanip>
+#include "Header.h"
 #include "Timezones.h"//Including class for Timezones
 #include "City.h"//Including class for City
 
@@ -28,7 +18,7 @@ int main()
 	city.fileinput();
 	city.current();
 	city.compare();
-	if (city.wish == "Kathmandu")//If specific city is Katmandu, because weird time zone
+	if (city.wish == "Kathmandu")//If specific city is Kathmandu, because weird time zone
 	{
 		city.kathmandu();//calls function of kathmandu
 	}
@@ -38,7 +28,7 @@ int main()
 	}
 	else if (city.wish == "Calcutta" || city.wish == "NewDelhi" || city.wish == "Colombo")//weird timezone
 	{
-		city.calcutta();//calls funtion because weird timezone
+		city.calcutta();//calls function because weird timezone
 	}
 	else
 	{
