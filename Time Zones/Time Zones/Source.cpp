@@ -10,6 +10,7 @@
 #include <ctime>
 #include <iomanip>
 #include "Timezones.h"//Including class for Timezones
+#include "City.h"//Including class for City
 
 
 //void fileinput();
