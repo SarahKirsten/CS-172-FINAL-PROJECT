@@ -12,6 +12,6 @@ private:
 	string citywish;
 	string attractions;
 public:
-	string getWish();
-	string getAttractions(string citywish);
+	void getWish();
+	void getAttractions(string citywish);
 };

@@ -4,13 +4,13 @@
 #include<string>
 using namespace std;
 
-string City::getWish()
+void City::getWish()
 {
 	//gets wish from timezone class
 	this->citywish = wish;
 }
 
-string City::getAttractions(string wish)
+void City::getAttractions(string wish)
 {
 	//reads in attractions file
 	ifstream file("Attractions.txt");
