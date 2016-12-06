@@ -33,3 +33,12 @@ void City::getAttractions(string wish)
 	file.close();
 }
 
+double City::toUSD()
+{
+	return this->toUSD;
+}
+
+double City::fromUSD()
+{
+	return this->fromUSD;
+}

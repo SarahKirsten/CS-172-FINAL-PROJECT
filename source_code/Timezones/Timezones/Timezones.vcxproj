@@ -144,11 +144,13 @@
   <ItemGroup>
     <ClInclude Include="City.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="Spokane.h" />
     <ClInclude Include="Timezones.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="City.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Spokane.cpp" />
     <ClCompile Include="Timezones.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

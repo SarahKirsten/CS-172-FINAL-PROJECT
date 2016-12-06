@@ -14,4 +14,6 @@ private:
 public:
 	void getWish();
 	void getAttractions(string citywish);
+	double toUSD();
+	double fromUSD();
 };
