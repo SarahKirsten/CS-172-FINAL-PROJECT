@@ -140,13 +140,13 @@ void Timezones::regular() {
 	}
 }
 
-double Timezones::setCurToUSD(double toUSD)
+double Timezones::setCurrencyToUSD(double toUSD)
 {
 	this->toUSD = toUSD;
 	return toUSD;
 }
 
-double Timezones::setUSDToCur(double fromUSD)
+double Timezones::setUSDToCurrency(double fromUSD)
 {
 	this->fromUSD = fromUSD;
 	return fromUSD;

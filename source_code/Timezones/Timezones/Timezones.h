@@ -30,8 +30,8 @@ public:
 	void kabul();
 	void calcutta();
 	void regular();
-	double setCurToUSD(double toUSD);
-	double setUSDToCur(double fromUSD);
+	double setCurrencyToUSD(double toUSD);
+	double setUSDToCurrency(double fromUSD);
 };
 
 
