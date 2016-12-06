@@ -153,6 +153,10 @@
     <ClCompile Include="Spokane.cpp" />
     <ClCompile Include="Timezones.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Attractions.txt" />
+    <Text Include="TimeZones.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

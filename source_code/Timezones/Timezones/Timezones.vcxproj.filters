@@ -42,4 +42,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Attractions.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="TimeZones.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

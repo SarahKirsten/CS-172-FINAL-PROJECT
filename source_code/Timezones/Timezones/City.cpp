@@ -19,7 +19,7 @@ void City::getAttractions(string wish)
 		for (int i = 0; i < 372; ++i)
 		{
 			//reads in the city then the string of attractions
-			file >> city >> " " >> attractions;
+			file >> city /*>> " " */>> attractions; /*note from Sarah: the program doesn't like ( >> " " )*/
 
 			//finds the line of code with the wished city
 			if (city.compare(citywish) == 0)
@@ -35,10 +35,10 @@ void City::getAttractions(string wish)
 
 double City::toUSD()
 {
-	return this->toUSD;
+	return 0;
 }
 
 double City::fromUSD()
 {
-	return this->fromUSD;
+	return 0;
 }
