@@ -146,8 +146,8 @@ double Timezones::setCurToUSD(double toUSD)
 	return toUSD;
 }
 
-double Timezones::setUSDToCur(double toCur)
+double Timezones::setUSDToCur(double fromUSD)
 {
-	this->toCur = toCur;
-	return toCur;
+	this->fromUSD = fromUSD;
+	return fromUSD;
 }

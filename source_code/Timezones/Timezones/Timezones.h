@@ -17,7 +17,7 @@ private:
 	string myArray[372];
 	string city;
 	double toUSD;
-	double toCur;
+	double fromUSD;
 	bool found = false;
 public:
 	string wish;
@@ -31,7 +31,7 @@ public:
 	void calcutta();
 	void regular();
 	double setCurToUSD(double toUSD);
-	double setUSDToCur(double toCur);
+	double setUSDToCur(double fromUSD);
 };
 
 
