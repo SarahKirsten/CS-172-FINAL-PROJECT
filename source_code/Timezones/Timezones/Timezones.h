@@ -13,10 +13,14 @@ using namespace std;
 class Timezones
 {
 private:
-	double hourss, minutess, hours2, minutes2, t2;
+	double hourss, minutess, hours2, minutes2, t2, time2;
 	string myArray[372];
 	string city;
 	bool found = false;
+	double fromOther;
+	double toOther;
+	ifstream fileOfCities;
+	int countLine;
 public:
 	string wish;
 	virtual double toUSD();
@@ -26,11 +30,10 @@ public:
 	void current();
 	void compare();
 	void kathmandu();
-	void kabul();
-	void calcutta();
+	//void kabul();
+	//void calcutta();
 	void regular();
-	//double setCurrencyToUSD(double toUSD);
-	//double setUSDToCurrency(double fromUSD);
+	
 };
 
 

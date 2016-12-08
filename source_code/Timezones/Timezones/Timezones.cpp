@@ -1,19 +1,30 @@
 #include "Timezones.h"
 
-
 void Timezones::fileinput()
 {
-
-	ifstream file("Timezones.txt");//declaring existence and name of text file
-
-	if (file.is_open()) //opens file
-		for (int i = 0; i < 372; ++i)//loop reads non white space and stores it in array
-		{
-			file >> myArray[i];//the array the txt file is in
-		}
-
-	file.close();//file closes
+	fileOfCities.open("TimeZones.txt", fstream::in);
+	while (!fileOfCities.eof())
+	{
+		fileOfCities >> t2 >> city >> fromOther >> toOther;
+		countLine++;
+	}
+	fileOfCities.close();
 }
+
+
+//void Timezones::fileinput()
+//{
+//
+//	ifstream file("Timezones.txt");//declaring existence and name of text file
+//
+//	if (file.is_open()) //opens file
+//		for (int i = 0; i < 372; ++i)//loop reads non white space and stores it in array
+//		{
+//			file >> myArray[i];//the array the txt file is in
+//		}
+//
+//	file.close();//file closes
+//}
 
 
 void Timezones::current() {
@@ -33,21 +44,35 @@ void Timezones::current() {
 	cin >> wish;//read in wanted city
 }
 
-void Timezones::compare() {
-	for (int j = 0; j <= 372; j++)
+
+void Timezones::compare()
+{
+	fileOfCities.open("TimeZones.txt", fstream::in);
+	if (city==wish)
 	{
-		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
-		{
-			string time2 = myArray[j - 1];
-			t2 = stoi(time2);
-			found = true;
-			break;
-			//cout << "The UTC offset is: " << t2 << endl;
-		}
+		//getline(fileOfCities, countLine);
+		time2 = t2;
+		found = true;
 	}
-	if (!found)
-		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
+	
+		//*found = false;
+		//cout << "\nThe city you want does not exist in this universe or is not capitalized." << endl << endl;
 }
+//void Timezones::compare() {
+//	for (int j = 0; j <= 372; j++)
+//	{
+//		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
+//		{
+//			string time2 = myArray[j - 1];
+//			t2 = stoi(time2);
+//			found = true;
+//			break;
+//			//cout << "The UTC offset is: " << t2 << endl;
+//		}
+//	}
+//	if (!found)
+//		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
+//}
 
 void Timezones::kathmandu() {
 	hours2 = hourss + 7.0 + 5.0;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
@@ -72,55 +97,54 @@ void Timezones::kathmandu() {
 
 }
 
-void Timezones::kabul() {
-	hours2 = hourss + 7.0 + 4.0;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
-	minutes2 = minutess + 30;//Weird time zone of half an hour
-	if (minutes2 >= 60)//If minutes exceeds 60, displays properly
-	{
-		hours2++;
-		minutes2 = minutes2 - 60;
-	}
-	if (hours2 >= 24)//If city is one-day ahead
-	{
-		int hours3 = hours2 - 23;
-		if (hours3 >= 12)
-			cout << "The current time in " << wish << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM the next day." << endl;
-		else
-			cout << "The current time in " << wish << " is " << hours3 << ":" << setfill('0') << setw(2) << minutes2 << " AM the next day." << endl;
-	}
-	else if (hours2 >= 12)
-		cout << "The current time in " << wish << " is " << hours2 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM." << endl;
-	else
-		cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
-
-}
-
-void Timezones::calcutta() {
-	hours2 = hourss + 7.0 + 5.0;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
-	minutes2 = minutess + 30;//Weird time zone of half an hour
-	if (minutes2 >= 60)//If minutes exceeds 60, displays properly
-	{
-		hours2++;
-		minutes2 = minutes2 - 60;
-	}
-	if (hours2 >= 24)//If city is one-day ahead
-	{
-		int hours3 = hours2 - 23;
-		if (hours3 >= 12)
-			cout << "The current time in " << wish << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM the next day." << endl;
-		else
-			cout << "The current time in " << wish << " is " << hours3 << ":" << setfill('0') << setw(2) << minutes2 << " AM the next day." << endl;
-	}
-	else if (hours2 >= 12)
-		cout << "The current time in " << wish << " is " << hours2 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM." << endl;
-	else
-		cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
-
-}
+//void Timezones::kabul() {
+//	hours2 = hourss + 7.0 + 4.0;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
+//	minutes2 = minutess + 30;//Weird time zone of half an hour
+//	if (minutes2 >= 60)//If minutes exceeds 60, displays properly
+//	{
+//		hours2++;
+//		minutes2 = minutes2 - 60;
+//	}
+//	if (hours2 >= 24)//If city is one-day ahead
+//	{
+//		int hours3 = hours2 - 23;
+//		if (hours3 >= 12)
+//			cout << "The current time in " << wish << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM the next day." << endl;
+//		else
+//			cout << "The current time in " << wish << " is " << hours3 << ":" << setfill('0') << setw(2) << minutes2 << " AM the next day." << endl;
+//	}
+//	else if (hours2 >= 12)
+//		cout << "The current time in " << wish << " is " << hours2 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM." << endl;
+//	else
+//		cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
+//
+//}
+//
+//void Timezones::calcutta() {
+//	hours2 = hourss + 7.0 + 5.0;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
+//	minutes2 = minutess + 30;//Weird time zone of half an hour
+//	if (minutes2 >= 60)//If minutes exceeds 60, displays properly
+//	{
+//		hours2++;
+//		minutes2 = minutes2 - 60;
+//	}
+//	if (hours2 >= 24)//If city is one-day ahead
+//	{
+//		int hours3 = hours2 - 23;
+//		if (hours3 >= 12)
+//			cout << "The current time in " << wish << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM the next day." << endl;
+//		else
+//			cout << "The current time in " << wish << " is " << hours3 << ":" << setfill('0') << setw(2) << minutes2 << " AM the next day." << endl;
+//	}
+//	else if (hours2 >= 12)
+//		cout << "The current time in " << wish << " is " << hours2 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM." << endl;
+//	else
+//		cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
+//
+//}
 
 void Timezones::regular() {
-	if (found)
-	{
+
 		hours2 = hourss + t2 + 7.0;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
 		if (hours2 >= 24)//If city is one-day ahead
 		{
@@ -137,7 +161,6 @@ void Timezones::regular() {
 		else
 			cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << minutess << " AM." << endl;
 
-	}
 }
 
 double Timezones::toUSD()
