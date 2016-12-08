@@ -10,7 +10,7 @@ void City::getWish()
 	this->citywish = wish;
 }
 
-void City::getAttractions(string wish)
+void City::getAttractions()
 {
 	getWish();
 	//reads in attractions file
@@ -25,7 +25,7 @@ void City::getAttractions(string wish)
 			//finds the line of code with the wished city
 			if (city.compare(citywish) == 0)
 			{
-				cout << "The top five attractions for " << wish << " are ";
+				cout << "The top five attractions for " << citywish << " are ";
 				//outputs the string of attractions
 				cout << attractions << endl;
 			}

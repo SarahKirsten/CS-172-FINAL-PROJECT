@@ -13,7 +13,7 @@ private:
 	string attractions;
 public:
 	void getWish();
-	void getAttractions(string citywish);
+	void getAttractions();
 	double toUSD();
 	double fromUSD();
 };
