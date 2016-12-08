@@ -24,9 +24,6 @@
     <ClInclude Include="City.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Spokane.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timezones.cpp">
@@ -36,9 +33,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Spokane.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
