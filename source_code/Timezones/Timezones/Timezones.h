@@ -5,6 +5,8 @@
 #include <fstream>
 #include <ctime>
 #include <iomanip>
+#include <vector>
+#include "City.h"
 
 using namespace std;
 
@@ -17,6 +19,7 @@ private:
 	string myArray[372];
 	string city;
 	bool found = false;
+	vector<City> attractions;
 public:
 	string wish;
 	virtual double toUSD();

@@ -2,18 +2,17 @@
 #include<iostream>
 #include<fstream>
 #include<string>
-#include"Timezones.h"
+
 using namespace std;
 
-class City : public Timezones
+class City
 {
 private:
 	string city;
-	string citywish;
 	string attractions;
 public:
 	void getWish();
-	void getAttractions();
+	void getAttractions(string wish);
 	double toUSD();
 	double fromUSD();
 };
