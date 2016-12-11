@@ -269,7 +269,7 @@ void Timezones::regular2() {
 	}
 }
 
-double Timezones::toUSD()
+/* implemented in city file double Timezones::toUSD()
 {
 	return 0;
 }
@@ -277,5 +277,5 @@ double Timezones::toUSD()
 double Timezones::fromUSD()
 {
 	return 0;
-}
+}*/ 
 

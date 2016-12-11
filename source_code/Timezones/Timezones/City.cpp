@@ -36,12 +36,18 @@ void City::getAttractions(string wish)
 	file.close();
 }
 
-double City::toUSD()
+double USD::toUSD()
 {
-	return 0;
+	u = othercurr*rate;
+	return u;
 }
 
-double City::fromUSD()
+double USD::fromUSD()
 {
-	return 0;
+	othercurr = u / rate;
 }
+
+/*double OtherCurrency::convertToCurrency()
+{
+	
+}*/

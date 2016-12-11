@@ -22,3 +22,8 @@ and information about who owns/created this project*/
 going backwards hurts
 ~Sarah
 */
+
+// In the process of using virtual classes to convert currency. Use friend class to have access to Timezones class 
+//and open and use already stored text file array.
+//Open text file, pull from usd and to usd. Goes through toUSD(), through fromUSD().
+//-Anna

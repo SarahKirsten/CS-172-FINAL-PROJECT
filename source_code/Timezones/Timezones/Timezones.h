@@ -27,8 +27,8 @@ public:
 	int finalminute;
 	string location;
 	string wish;
-	virtual double toUSD();
-	virtual double fromUSD();
+	//Implemented in city class virtual double toUSD();
+	//Implemented in city class  double fromUSD();
 
 	void fileinput();
 	void current();
