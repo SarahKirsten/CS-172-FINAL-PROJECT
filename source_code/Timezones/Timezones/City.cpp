@@ -38,10 +38,12 @@ void City::getAttractions(string wish)
 
 double City::toUSD()
 {
-	return 0;
+	u=c/rate;
+	return u;
 }
 
 double City::fromUSD()
 {
-	return 0;
+	u=c*rate;
+	return u;
 }
