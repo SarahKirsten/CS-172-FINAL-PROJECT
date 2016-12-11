@@ -16,18 +16,49 @@ int main()
 	Timezones city;
 	/*city.setWish();*/
 	city.fileinput();
+
+	double money;
+
+
+
+	cout << "What is your current city? ";
+	getline(cin, city.location);
+	//cout << endl << location << endl;
+	cout << "How much money will be with you? ";
+	cin >> money;//remember this is local currency, need change to USD
+	//cout << endl << money << endl;
+
+
+
+
+
 	city.current();
 	city.compare();
+	city.compare2();
+	//city.getGMT();
 
-
-	if (city.wish == "Kathmandu")//If specific city is Kathmandu, because weird time zone
+	//computer time to location time
+	if (city.location == "Kathmandu")//If specific city is Kathmandu, because weird time zone
 	{
 		city.kathmandu();//calls function of kathmandu
 	}
 
+	/*else if (city.location == "Spokane" || city.location == "Seattle" || city.location == "LosAngeles" || city.location == "SanDiego")
+		city.sameplace();*/
 	else
 	{
 		city.regular();//calls function for regular timezones
+	}
+
+
+
+	if (city.wish == "Kathmandu")
+	{
+		city.kathmandu2();
+	}
+	else
+	{
+		city.regular2();
 	}
 	return 0;
 

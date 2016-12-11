@@ -13,7 +13,6 @@ using namespace std;
 class Timezones
 {
 private:
-	double hourss, minutess, hours2, minutes2, t2, time2;
 	string myArray[372];
 	string city;
 	bool found = false;
@@ -22,6 +21,11 @@ private:
 	ifstream fileOfCities;
 	int countLine;
 public:
+	double hourss, minutess, hours2, minutes2, t2, time2;
+	double locationt2;
+	int finalhour;
+	int finalminute;
+	string location;
 	string wish;
 	virtual double toUSD();
 	virtual double fromUSD();
@@ -29,11 +33,14 @@ public:
 	void fileinput();
 	void current();
 	void compare();
+	void compare2();
 	void kathmandu();
+	void kathmandu2();
 	//void kabul();
 	//void calcutta();
 	void regular();
-	
+	void regular2();
+	//double getGMT();
 };
 
 

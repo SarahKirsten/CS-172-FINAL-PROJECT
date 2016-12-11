@@ -7,12 +7,13 @@ using namespace std;
 void City::getWish()
 {
 	//gets wish from timezone class
-	this->citywish = wish;
+	/*this->citywish = wish;*/
+
+	//trying to change to the has-a relationship
 }
 
-void City::getAttractions()
+void City::getAttractions(string wish)
 {
-	getWish();
 	//reads in attractions file
 	ifstream file("Attractions.txt");
 	if (file.is_open())
@@ -23,9 +24,9 @@ void City::getAttractions()
 			file >> city /*>> " " */>> attractions; /*note from Sarah: the program doesn't like ( >> " " )*/
 
 			//finds the line of code with the wished city
-			if (city.compare(citywish) == 0)
+			if (city.compare(wish) == 0)
 			{
-				cout << "The top five attractions for " << citywish << " are ";
+				cout << "The top five attractions for " << wish << " are ";
 				//outputs the string of attractions
 				cout << attractions << endl;
 			}
