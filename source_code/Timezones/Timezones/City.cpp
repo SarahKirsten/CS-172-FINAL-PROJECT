@@ -4,6 +4,7 @@
 #include<string>
 using namespace std;
 
+/*dont need this*/
 //void City::getWish()
 //{
 //	//gets wish from timezone class
@@ -36,18 +37,19 @@ void City::getAttractions(string wish)
 	file.close();
 }
 
-double USD::toUSD()
+double USD::toUSD()//location city currency to USD
 {
 	u = othercurr*rate;
 	return u;
 }
 
-double USD::fromUSD()
+double USD::fromUSD()//USD to wish city currency
 {
 	othercurr = u / rate;
 	return othercurr;
 }
 
+/*dont need this*/
 /*double OtherCurrency::convertToCurrency()
 {
 	

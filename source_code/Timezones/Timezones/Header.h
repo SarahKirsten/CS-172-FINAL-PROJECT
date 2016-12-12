@@ -50,4 +50,7 @@ London
 Paris
 Kathmandu
 Seoul
-*/
+		~Sarah*/
+
+/*NOTE TO SELF: Fix attractions in City.cpp
+		~Sarah*/

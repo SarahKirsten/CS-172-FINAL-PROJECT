@@ -2,7 +2,7 @@
 
 
 
-
+//read file into array
 void Timezones::fileinput()
 {
 
@@ -16,20 +16,9 @@ void Timezones::fileinput()
 
 	file.close();//file closes
 }
+	
 
-//double Timezones::getGMT()
-//{
-//	for (int j = 0; j <= 372; j++)
-//	{
-//		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
-//		{
-//			string time2 = myArray[j - 1];
-//			locationt2 = stoi(time2);
-//		}
-//	}
-//	return locationt2;
-//}
-				
+//read computer time
 void Timezones::current() {
 	//convert current time to string form
 	time_t rawtime;
@@ -47,6 +36,7 @@ void Timezones::current() {
 }
 
 
+//get GMT of location city
 void Timezones::compare() {
 	for (int j = 0; j <= 372; j++)
 	{
@@ -63,6 +53,8 @@ void Timezones::compare() {
 		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
 }
 
+
+//get GMT of wish city
 void Timezones::compare2() {
 	for (int j = 0; j <= 372; j++)
 	{
@@ -79,6 +71,8 @@ void Timezones::compare2() {
 		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
 }
 
+
+//change computer time to location kathmandu time
 void Timezones::kathmandu() {
 	hours2 = hourss + 8.0 + 5.0;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
 	minutes2 = minutess + 45; //Weird time zone of 3/4 an hour
@@ -127,6 +121,8 @@ void Timezones::kathmandu() {
 	}
 }
 
+
+//change location city time to wish kathmandu time
 void Timezones::kathmandu2()
 {
 	//hours2=finalhour + (Location GMT) + (wish GMT)
@@ -164,6 +160,7 @@ void Timezones::kathmandu2()
 	}
 }
 
+/*dont need this unless future development*/
 //void Timezones::kabul() {
 //	hours2 = hourss + 7.0 + 4.0;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
 //	minutes2 = minutess + 30;//Weird time zone of half an hour
@@ -210,6 +207,9 @@ void Timezones::kathmandu2()
 //
 //}
 
+
+
+//change computer time to location city time
 void Timezones::regular() {
 
 		hours2 = hourss + 8.0 + locationt2;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
@@ -251,6 +251,9 @@ void Timezones::regular() {
 		//cout << endl << finalhour << ":" << finalminute << endl;
 }
 
+
+
+//change location city time to wish city time
 void Timezones::regular2() {
 
 	hours2 = finalhour - locationt2 + t2;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
@@ -283,6 +286,8 @@ void Timezones::regular2() {
 		cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << finalminute << " AM." << endl;
 	}
 }
+
+
 
 /* implemented in city file double Timezones::toUSD()
 {
