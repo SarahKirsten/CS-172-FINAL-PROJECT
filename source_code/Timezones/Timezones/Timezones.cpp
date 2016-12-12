@@ -135,7 +135,7 @@ void Timezones::kathmandu2()
 	}
 	if (hours2 >= 24)//If city is one-day ahead (of spokane)
 	{
-		int hours3 = hours2 - 23;
+		int hours3 = hours2 - 24;
 		if (hours3 >= 12)
 		{
 			cout << "The current time in " << wish << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM the next day." << endl;

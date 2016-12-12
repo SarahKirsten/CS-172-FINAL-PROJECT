@@ -52,5 +52,23 @@ Kathmandu
 Seoul
 		~Sarah*/
 
-/*NOTE TO SELF: Fix attractions in City.cpp
+/*NOTE TO SELF:
+Fix attractions in City.cpp
+		~Sarah*/
+
+/*
+AM today to AM today
+AM today to PM today
+AM today to AM tomorrow 
+AM today to PM tomorrow
+
+
+PM today to PM today 
+PM today to AM tomorrow 
+PM today to PM tomorrow 
+
+
+AM tomorrow to AM tomorrow 
+AM tomorrow to PM tomorrow
+
 		~Sarah*/
