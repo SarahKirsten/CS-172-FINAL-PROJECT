@@ -1,11 +1,18 @@
-﻿  Source.cpp
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2059: syntax error: 'for'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2143: syntax error: missing ')' before ';'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2143: syntax error: missing ';' before '<'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2143: syntax error: missing ';' before '++'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2086: 'int i': redefinition
-  c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): note: see declaration of 'i'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2059: syntax error: ')'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2143: syntax error: missing ';' before '{'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2447: '{': missing function header (old-style formal list?)
+﻿  Timezones.cpp
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(39): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(505): note: see declaration of 'localtime'
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(88): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(90): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(93): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(96): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(129): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(148): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(172): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(188): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(193): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(246): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(249): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(269): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(279): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(289): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Timezones.vcxproj -> C:\Users\Sarah\Source\Repos\CS-172-FINAL-PROJECT\source_code\Timezones\x64\Debug\Timezones.exe

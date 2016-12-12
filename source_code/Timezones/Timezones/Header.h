@@ -27,3 +27,27 @@ going backwards hurts
 //and open and use already stored text file array.
 //Open text file, pull from usd and to usd. Goes through toUSD(), through fromUSD().
 //-Anna
+
+/*
+cities with attractions in attractions.txt:
+
+Honolulu
+Juneau
+Adak
+LosAngeles
+SanDiego
+Seattle
+Spokane
+Phoenix
+SaltLakeCity
+Chicago
+Dallas
+NewOrleans
+Boston
+Miami
+NewYork
+London
+Paris
+Kathmandu
+Seoul
+*/

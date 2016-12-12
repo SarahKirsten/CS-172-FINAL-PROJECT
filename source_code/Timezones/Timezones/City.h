@@ -12,10 +12,10 @@ private:
 	string attractions;
 public:
 
-	void getWish();
+	/*void getWish();*/
 	void getAttractions(string wish);
-	double virtual toUSD();
-	double virtual fromUSD();
+	//double virtual toUSD();
+	//double virtual fromUSD();
 };
 
 class USD
@@ -34,6 +34,6 @@ class OtherCurrency:public USD
 {
 public: 
 
-	double convertToCurrency();
+	//double convertToCurrency();
 
 };

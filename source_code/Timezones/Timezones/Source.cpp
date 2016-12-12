@@ -14,17 +14,22 @@
 
 int main()
 {
+	double money;
+	int d = 0;
+	int v = 0;
+
+	Timezones city;
+	/*city.setWish();*/
+	city.fileinput();
+
+	cout << "How many time changes do you want to look at? ";
+	cin >> v;
 	
-		Timezones city;
-		/*city.setWish();*/
-		city.fileinput();
-
-		double money;
-
-
+	do
+	{
 
 		cout << "What is your current city? ";
-		getline(cin, city.location);
+		cin >> city.location;
 		//cout << endl << location << endl;
 		cout << "How much money will be with you? ";
 		cin >> money;//remember this is local currency, need change to USD
@@ -62,7 +67,7 @@ int main()
 		{
 			city.regular2();
 		}
-		return 0;
+		
 
 
 		//else if (city.wish == "Kabul")//is kabul, because weird time zone
@@ -73,7 +78,11 @@ int main()
 		//{
 		//	city.calcutta();//calls function because weird timezone
 		//}
-	}
+
+		d++;
+		cout << endl << endl;
+	} while (d < v);
+	return 0;
 }
 
 

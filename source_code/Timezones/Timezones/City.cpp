@@ -4,13 +4,13 @@
 #include<string>
 using namespace std;
 
-void City::getWish()
-{
-	//gets wish from timezone class
-	/*this->citywish = wish;*/
-
-	//trying to change to the has-a relationship
-}
+//void City::getWish()
+//{
+//	//gets wish from timezone class
+//	/*this->citywish = wish;*/
+//
+//	//trying to change to the has-a relationship
+//}
 
 void City::getAttractions(string wish)
 {
