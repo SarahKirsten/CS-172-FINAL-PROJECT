@@ -45,6 +45,7 @@ double USD::toUSD()
 double USD::fromUSD()
 {
 	othercurr = u / rate;
+	return othercurr;
 }
 
 /*double OtherCurrency::convertToCurrency()
