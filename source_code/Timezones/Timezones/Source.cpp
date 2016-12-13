@@ -31,18 +31,17 @@ int main()
 
 		cout << "What is your current city? ";
 		cin >> city.location;
-		//cout << endl << location << endl;
-		cout << "How much money will be with you? ";
-		cin >> city.money;//remember this is local currency, need change to USD
-		//cout << endl << money << endl;
-
-
+		
 		city.current();//computer time
 		city.compare();//get GMT of location city
-		cout << "Money conversion: " << city2.fromOther() << endl;//location money to USD money
+
+		cout << "How much money will be with you? ";
+		cin >> city.money;//remember this is local currency, need change to USD
+		cout << "To USD: " << city.toUSD() << endl;
+		cout << "Money conversion: " << city2.fromFormula() << endl;//location money to USD money
 		city.compare2();//get GMT of wish city
-		cout << "Money conversion: " << city2.toOther() << endl;//USD money to wish money
-		cout << "Money after conversion: " << city2.fromOther() << endl << endl;//USD money to wish money
+		cout << "Money conversion: " << city.fromUSD() << endl;//USD money to wish money
+		cout << "Money after conversion: " << city2.toFormula() << endl << endl;//USD money to wish money
 		attractions.getAttractions(city.wish);//get attractions for wish city
 		attractions.outputAttractions(city.wish);//SHOW attractions for wish city
 

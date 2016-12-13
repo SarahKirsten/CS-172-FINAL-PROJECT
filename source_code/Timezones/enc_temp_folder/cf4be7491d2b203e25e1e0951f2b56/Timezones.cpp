@@ -80,8 +80,9 @@ double Timezones::toUSD()
 			string money = myArray[j + 1];//look for index next to city name and store as money
 			fromOther = stod(money);//convert string money to double for fromOther 
 			found = true;//if conversion rate is found in array 
-			break;//break so program stops looking through array
+		//break so program stops looking through array
 			return fromOther;//return fromOther(currency converted to USD)
+			break;
 		}
 	}
 	if (!found)//check to see if conversion saved into array
