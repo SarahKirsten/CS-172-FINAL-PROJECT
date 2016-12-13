@@ -9,7 +9,7 @@ void Timezones::fileinput()
 	ifstream file("Timezones.txt");//declaring existence and name of text file
 
 	if (file.is_open()) //opens file
-		for (int i = 0; i < 372; ++i)//loop reads non white space and stores it in array
+		for (int i = 0; i < 465; ++i)//loop reads non white space and stores it in array
 		{
 			file >> myArray[i];//the array the txt file is in
 		}
@@ -38,7 +38,7 @@ void Timezones::current() {
 
 //get GMT of location city
 void Timezones::compare() {
-	for (int j = 0; j <= 372; j++)
+	for (int j = 0; j <= 465; j++)
 	{
 		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
@@ -56,7 +56,7 @@ void Timezones::compare() {
 
 //get GMT of wish city
 void Timezones::compare2() {
-	for (int j = 0; j <= 372; j++)
+	for (int j = 0; j <= 465; j++)
 	{
 		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
@@ -73,7 +73,7 @@ void Timezones::compare2() {
 //get currency rate of location city. Changes current currency to USD 
 double Timezones::toUSD()
 {
-	for (int j = 0; j <= 372; j++)//searches through array
+	for (int j = 0; j <= 465; j++)//searches through array
 	{
 		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
 		{
@@ -92,13 +92,14 @@ double Timezones::toUSD()
 //get converted rate, changes the USD to another wished currency
 double Timezones::fromUSD()
 {
-	for (int j = 0; j <= 372; j++)//searches through array
+	for (int j = 0; j <= 465; j++)//searches through array
 	{
 		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
 		{
 			string money = myArray[j + 2];//look for index of two to the right for the from USD equivalence and store as money
 			//ISSUE WITH STOD
 			toOther = stod(money);//convert string money to double to be used for toOther
+			currency = myArray[j + 3];
 			return toOther;//spit out currency equivalence 
 			found = true;//conversion rate fromUSD is found
 			break;//stop looking through array
@@ -111,14 +112,14 @@ double Timezones::fromUSD()
 //Anna realizes that these USD functions are inefficient, but can't find a proper solution 
 double USD::fromFormula()
 {
-	double u = money1 * fromOther;//multiplies user input with foundOther(toUSD rate in array)
+	u = money1 * fromOther;//multiplies user input with foundOther(toUSD rate in array)
 	return u; //returns the equivalence in USD
 }
 
 
 double USD::toFormula()
 {
-	othercurr = u /toOther;
+	othercurr = u * toOther;
 	return othercurr;
 }
 

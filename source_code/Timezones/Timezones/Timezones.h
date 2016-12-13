@@ -13,7 +13,7 @@ using namespace std;
 class Timezones
 {
 protected:
-	string myArray[372];//array of GMT city toUSD fromUSD
+	string myArray[465];//array of GMT city toUSD fromUSD
 	string city;//array item
 	bool found = false;//to make sure city is a city in file
 
@@ -28,6 +28,7 @@ public:
 	double money;//?for currency stuff
 	double money1;//?for currency stuff
 	double money2;//?for currency stuff
+	string currency;
 	double fromOther, toOther;//?for currency stuff
 	int finalhour;//helps for location to wish
 	int finalminute;//helps for location to wish
