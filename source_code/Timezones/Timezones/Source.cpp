@@ -3,7 +3,7 @@
 #include "City.h"//Including class for City
 
 
-
+/*Dont need these here*/
 //void fileinput();
 //void compare();
 //void kathmandu();
@@ -14,80 +14,64 @@
 
 int main()
 {
-	
-	int v = 0;
+
+	int v = 0;//# of program runs
 	cout << "How many time changes do you want to see? ";
 	cin >> v;
-	cout << endl;
-//Loop to ask user how many times they would like to use the program before exiting
-	for (int d = 0; d < v; d++) {
-	//Create object city for timezones in relation to city
+
+	for (int d = 0; d < v; d++) {//loop until want to end program
 		Timezones city;
-	//Create object city2 for the currency in relation to city
 		USD city2;
-	//Set equal for precautionary, money makes more sense in USD class but it works better in Timezone class
-		city2.money = city.money;
-	//Create object attractions to implement attraction functions
+		city2.money1 = city.money1;
 		City attractions;
-	//Open file
-		city.fileinput();
+		/*city.setWish();*/
+		city.fileinput();//read in GMT city toUSD fromUSD
 
 
-	//Ask user for their location via city
+
 		cout << "What is your current city? ";
-	//input  location city to use to compare to city names stored in myArray in Timezone class
 		cin >> city.location;
-		//Current to take in wished city
-		city.current();
-		//Compare location city with cities in array to find offset
-		city.compare();
-		//Compare wish city with cities in array to find offset
-		city.compare2();
-		cout << endl << endl;
-		//Pull attractions out 
-		attractions.getAttractions(city.wish);
-		//Display attractions for requested city
-		attractions.outputAttractions(city.wish);
-	
+		//cout << endl << location << endl;
 		cout << "How much money will be with you? ";
 		cin >> city.money;//remember this is local currency, need change to USD
-		cout << endl << endl;
-	//FIX
-		cout << "toUSD" << city.toUSD() << endl;
-	//comment out later
-		cout << "Money conversion from formula: " << city2.fromFormula() << endl;
-		cout<<"from USD: "<<city.fromUSD()<<endl;
-	//comment out later
-		cout << "Money after conversion: " << city2.toFormula() << endl;
-		//
-		//city.getGMT();
+		//cout << endl << money << endl;
+
+
+		city.current();//computer time
+		city.compare();//get GMT of location city
+		cout << "Money conversion: " << city2.fromOther() << endl;//location money to USD money
+		city.compare2();//get GMT of wish city
+		cout << "Money conversion: " << city2.toOther() << endl;//USD money to wish money
+		cout << "Money after conversion: " << city2.fromOther() << endl << endl;//USD money to wish money
+		attractions.getAttractions(city.wish);//get attractions for wish city
+		attractions.outputAttractions(city.wish);//SHOW attractions for wish city
+
+
 		//computer time to location time
 		if (city.location == "Kathmandu")//If specific city is Kathmandu, because weird time zone
 		{
-			city.kathmandu();//calls function of kathmandu
+			city.kathmandu();//calls function of location kathmandu
 		}
 
-		/*else if (city.location == "Spokane" || city.location == "Seattle" || city.location == "LosAngeles" || city.location == "SanDiego")
-			city.sameplace();*/
 		else
 		{
-			city.regular();//calls function for regular timezones
+			city.regular();//calls function of location regular cities
 		}
 
 
 
-		if (city.wish == "Kathmandu")
+		if (city.wish == "Kathmandu")//weird time zone
 		{
-			city.kathmandu2();//location to Kathmandu time(special case for offset)
+			city.kathmandu2();//calls function of wish kathmandu
 		}
 		else
 		{
-			city.regular2(); //location to a regular city time
+			city.regular2();//calls function of wish regular cities
 		}
-		
-		cout << endl << endl;
-}
-	return 0;
+
+		cout << endl << endl;//adds spaces between program runs
+	}
+	/*dont need unless future development*/
 		//else if (city.wish == "Kabul")//is kabul, because weird time zone
 		//{
 		//	city.kabul();//calls function of kabul
@@ -95,7 +79,8 @@ int main()
 		//else if (city.wish == "Calcutta" || city.wish == "NewDelhi" || city.wish == "Colombo")//weird timezone
 		//{
 		//	city.calcutta();//calls function because weird timezone
-		}
+	return 0;
+}
 
 
 

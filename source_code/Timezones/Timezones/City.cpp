@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void City::getAttractions(string wish)
+void City::getAttractions(string wish)//get attractions for wish city
 {
 	//reads in attractions file
 	ifstream file("Attractions.txt");
@@ -22,16 +22,19 @@ void City::getAttractions(string wish)
 	file.close();
 }
 
-void City::outputAttractions(string wish)
+void City::outputAttractions(string wish)//SHOWS attractions for wish city
 {
 	for (int j = 0; j < 114; j++)
 	{
+		//Finds the wish city in the array
 		if (wish.compare(cityattractions[j]) == 0)
 		{
+			//outputs the the nexts 5 strings in the array
+			//which are the top 5 attractions for the chosen city
 			cout << "The top 5 attractions for " << wish << " are:" << endl;
 			cout << cityattractions[j + 1] << endl << cityattractions[j + 2] << endl << cityattractions[j + 3]
 				<< endl << cityattractions[j + 4] << endl << cityattractions[j + 5] << endl << endl;
-
+			//breaks after it finds the city and outputs the attractions
 			break;
 		}	
 	}
