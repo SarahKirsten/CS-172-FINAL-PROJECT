@@ -74,9 +74,10 @@ int main()
 		{
 			city.regular2();
 		}
-		return 0;
+		
+		cout << endl << endl;
 }
-
+	return 0;
 		//else if (city.wish == "Kabul")//is kabul, because weird time zone
 		//{
 		//	city.kabul();//calls function of kabul

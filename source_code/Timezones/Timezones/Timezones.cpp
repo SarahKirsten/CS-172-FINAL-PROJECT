@@ -43,7 +43,7 @@ void Timezones::compare() {
 		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
 			string time2 = myArray[j - 1];
-			locationt2 = stod(time2);
+			locationt2 = stoi(time2);
 
 			string money = myArray[j + 1];
 			//City::toUSD = stod(money);
@@ -64,7 +64,7 @@ void Timezones::compare2() {
 		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
 			string time2 = myArray[j - 1];
-			t2 = stod(time2);
+			t2 = stoi(time2);
 			found = true;
 			break;
 			//cout << "The GMT offset is: " << t2 << endl;
