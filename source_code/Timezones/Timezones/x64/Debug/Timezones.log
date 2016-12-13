@@ -12,4 +12,5 @@ c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones
 c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(347): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
 c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(360): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 c:\users\sarah\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(111): warning C4715: 'Timezones::fromUSD': not all control paths return a value
+  LINK : C:\Users\Sarah\Source\Repos\CS-172-FINAL-PROJECT\source_code\Timezones\x64\Debug\Timezones.exe not found or not built by the last incremental link; performing full link
   Timezones.vcxproj -> C:\Users\Sarah\Source\Repos\CS-172-FINAL-PROJECT\source_code\Timezones\x64\Debug\Timezones.exe

@@ -333,7 +333,7 @@ void Timezones::regular() {
 		}
 		else if (hours2 == 12)
 		{
-			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM." << endl;
+			cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM." << endl;
 			finalhour = 12;
 		}
 		else if (hours2 == 0)
