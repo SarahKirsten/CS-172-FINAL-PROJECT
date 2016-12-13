@@ -79,9 +79,10 @@ double Timezones::toUSD()
 		{
 			string money = myArray[j + 1];//look for index next to city name and store as money
 			fromOther = stod(money);//convert string money to double for fromOther 
+			return fromOther;//return fromOther(currency converted to USD)
 			found = true;//if conversion rate is found in array 
 			break;//break so program stops looking through array
-			return fromOther;//return fromOther(currency converted to USD)
+			
 		}
 	}
 	if (!found)//check to see if conversion saved into array
@@ -98,9 +99,10 @@ double Timezones::fromUSD()
 			string money = myArray[j + 2];//look for index of two to the right for the from USD equivalence and store as money
 			//ISSUE WITH STOD
 			toOther = stod(money);//convert string money to double to be used for toOther
+			return toOther;//spit out currency equivalence 
 			found = true;//conversion rate fromUSD is found
 			break;//stop looking through array
-			return toOther;//spit out currency equivalence 
+			
 		}
 	}
 	if (!found)
@@ -109,14 +111,14 @@ double Timezones::fromUSD()
 //Anna realizes that these USD functions are inefficient, but can't find a proper solution 
 double USD::fromFormula()
 {
-	double u = money*fromOther;//multiplies user input with foundOther(toUSD rate in array)
+	double u = money1 * fromOther;//multiplies user input with foundOther(toUSD rate in array)
 	return u; //returns the equivalence in USD
 }
 
 
 double USD::toFormula()
 {
-	othercurr = u /money;
+	othercurr = u /toOther;
 	return othercurr;
 }
 

@@ -22,7 +22,7 @@ int main()
 	for (int d = 0; d < v; d++) {//loop until want to end program
 		Timezones city;
 		USD city2;
-		city2.money1 = city.money1;
+		
 		City attractions;
 		/*city.setWish();*/
 		city.fileinput();//read in GMT city toUSD fromUSD
@@ -35,14 +35,19 @@ int main()
 		cout << "How much money will be with you? ";
 		cin >> city.money;//remember this is local currency, need change to USD
 		//cout << endl << money << endl;
+		city2.money1 = city.money;
 
 
 		city.current();//computer time
 		city.compare();//get GMT of location city
-		cout << "Money conversion: " << city2.fromOther() << endl;//location money to USD money
+		cout << "Money conversion: " << city.toUSD() << endl;//location money to USD money
 		city.compare2();//get GMT of wish city
-		cout << "Money conversion: " << city2.toOther() << endl;//USD money to wish money
-		cout << "Money after conversion: " << city2.fromOther() << endl << endl;//USD money to wish money
+		cout << "Money conversion: " << city.fromUSD() << endl;//USD money to wish money
+		city2.fromOther = city.toUSD();
+		/*city2.toOther = city.fromUSD();*/
+		cout << "Money after conversion: " << city2.fromFormula() << endl << endl;//USD money to wish money
+		cout << "Money after conversion: " << city2.toFormula() << endl << endl;//USD money to wish money
+
 		attractions.getAttractions(city.wish);//get attractions for wish city
 		attractions.outputAttractions(city.wish);//SHOW attractions for wish city
 
