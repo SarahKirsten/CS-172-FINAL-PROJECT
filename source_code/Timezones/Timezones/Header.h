@@ -85,6 +85,3 @@ PM tomorrow to PM tomorrow
 	-FIGURE OUT CURRENCY
 
 		~Sarah*/
-
-//Kathmandu2() doesn't need to set final hour
-//-Marnie
