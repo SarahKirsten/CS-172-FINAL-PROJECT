@@ -46,7 +46,7 @@ void Timezones::compare() {
 			locationt2 = stod(time2);
 
 			string money = myArray[j + 1];
-			City::toUSD = stod(money);
+			//City::toUSD = stod(money);
 			found = true;
 			break;
 			//cout << "The GMT offset is: " << t2 << endl;

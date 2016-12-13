@@ -22,6 +22,7 @@ int main()
 	for (int d = 0; d < v; d++) {
 		Timezones city;
 		USD convertcurrency;
+		City attractions;
 		/*city.setWish();*/
 		city.fileinput();
 
@@ -38,7 +39,7 @@ int main()
 
 		convertcurrency.getCurrencyto(city.location);
 
-
+		
 
 
 
@@ -46,6 +47,8 @@ int main()
 		city.compare();
 		city.compare2();
 		convertcurrency.getCurrencyfrom(city.wish);
+		attractions.getAttractions(city.wish);
+		attractions.outputAttractions(city.wish);
 
 		//city.getGMT();
 		//computer time to location time
