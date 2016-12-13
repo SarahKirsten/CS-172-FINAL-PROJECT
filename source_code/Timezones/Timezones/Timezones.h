@@ -56,8 +56,8 @@ protected:
 
 public:
 	double u;
-	double fromOther();
-	double toOther();
+	double fromFormula();
+	double toFormula();
 };
 
 

@@ -42,18 +42,14 @@ void Timezones::compare() {
 	{
 		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
-			string time2 = myArray[j - 1];//get GMT
-			locationt2 = stoi(time2);//store GMT
-
-			string fromOther = myArray[j + 1];//get toUSD conversion
-			money1 = stod(fromOther);
-			//City::toUSD = stod(money);
+			string time2 = myArray[j - 1];
+			locationt2 = stoi(time2);
 			found = true;
 			break;
 			//cout << "The GMT offset is: " << t2 << endl;
 		}
 	}
-	if (!found)
+	if (!found)//check if city is in text file and searched for through aray correctly
 		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
 }
 
@@ -64,43 +60,63 @@ void Timezones::compare2() {
 	{
 		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
-			string time2 = myArray[j - 1];//get GMT
+			string time2 = myArray[j - 1];
 			t2 = stoi(time2);
-			string toOther = myArray[j + 2];//get fromUSD conversion
-			money2 = stod(toOther);
 			found = true;
 			break;
 			//cout << "The GMT offset is: " << t2 << endl;
 		}
 	}
-	if (!found)
+	if (!found)//check existense of user input in array
 		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
 }
-
+//get currency rate of location city. Changes current currency to USD 
 double Timezones::toUSD()
 {
-			return money1;
-			
+	for (int j = 0; j <= 372; j++)//searches through array
+	{
+		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
+		{
+			string money = myArray[j + 1];//look for index next to city name and store as money
+			fromOther = stod(money);//convert string money to double for fromOther 
+			found = true;//if conversion rate is found in array 
+			break;//break so program stops looking through array
+			return fromOther;//return fromOther(currency converted to USD)
+		}
+	}
+	if (!found)//check to see if conversion saved into array
+		cout << "Not found fix program" << endl;
+		return 0;
 }
-
+//get converted rate, changes the USD to another wished currency
 double Timezones::fromUSD()
 {
-			return money2;
+	for (int j = 0; j <= 372; j++)//searches through array
+	{
+		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
+		{
+			string money = myArray[j + 2];//look for index of two to the right for the from USD equivalence and store as money
+			//ISSUE WITH STOD
+			toOther = stod(money);//convert string money to double to be used for toOther
+			found = true;//conversion rate fromUSD is found
+			break;//stop looking through array
+			return toOther;//spit out currency equivalence 
+		}
+	}
+	if (!found)
+		return 0;
+}
+//Anna realizes that these USD functions are inefficient, but can't find a proper solution 
+double USD::fromFormula()
+{
+	double u = money*fromOther;//multiplies user input with foundOther(toUSD rate in array)
+	return u; //returns the equivalence in USD
 }
 
-double USD::fromOther()
-{
-	double u = money * money1;
-	/*othercurr=city.fromOther;
-	u = othercurr*rate;
-	return u;*/
-	return u;
-}
 
-
-double USD::toOther()
+double USD::toFormula()
 {
-	othercurr = u / money2;
+	othercurr = u /money;
 	return othercurr;
 }
 
@@ -115,7 +131,7 @@ void Timezones::kathmandu() {
 	}
 	
 	finalminute = minutess;
-	if (hours2 > 24)//If city is one-day ahead of Spokane
+	if (hours2 > 24)//If city is one-day ahead
 	{
 		int hours3 = hours2 - 24;
 		if (hours3 > 12)
@@ -123,17 +139,16 @@ void Timezones::kathmandu() {
 			cout << "The current time in " << location << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM." << endl;
 			finalhour = hours3;
 		}
-		else if (hours3 == 12)//noon special case
+		else if (hours3 == 12)
 		{
 			cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " PM." << endl;
 			finalhour = 12;
 		}
-		//Same as hours2 == 24
-		//else if (hours3 == 0)//midnight special case
-		//{
-		//	cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
-		//	finalhour = 0;
-		//}
+		else if (hours3 == 0)
+		{
+			cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
+			finalhour = 0;
+		}
 		else
 		{
 			cout << "The current time in " << location << " is " << hours3 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
@@ -141,7 +156,7 @@ void Timezones::kathmandu() {
 		}
 
 	}
-	else if (hours2 == 24) // midnight special case one day ahead of Spokane
+	else if (hours2 == 24)
 	{
 		cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM." << endl;
 		finalhour = 24;
@@ -151,15 +166,10 @@ void Timezones::kathmandu() {
 		cout << "The current time in " << location << " is " << hours2 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM." << endl;
 		finalhour = hours2;
 	}
-	else if (hours2 == 12) //noon
+	else if (hours2 == 0)
 	{
 		cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM." << endl;
 		finalhour = 12;
-	}
-	else if (hours2 == 0) // midnight
-	{
-		cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
-		finalhour = 0;
 
 	}
 	else
@@ -194,21 +204,20 @@ void Timezones::kathmandu2()
 		{
 			cout << "The current time in " << wish << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM the next day." << endl;
 		}
-		else if (hours3 == 12) //noon next day
+		else if (hours3 == 12)
 		{
 			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM the next day." << endl;
 		}
-		//this is the same as if hours 2 == 24
-		//else if (hours3 == 0) //midnight next day
-		//{
-		//	cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " AM the next day." << endl;
-		//}
+		else if (hours3 == 0)
+		{
+			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " AM the next day." << endl;
+		}
 		else
 		{
 			cout << "The current time in " << wish << " is " << hours3 << ":" << setfill('0') << setw(2) << finalminute << " AM the next day." << endl;
 		}
 	}
-	else if (hours2 == 24) //midnight next day
+	else if (hours2 == 24)
 	{
 		cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM the next day." << endl;
 	}
@@ -216,11 +225,11 @@ void Timezones::kathmandu2()
 	{
 		cout << "The current time in " << wish << " is " << hours2 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM." << endl;
 	}
-	else if (hours2 == 12) //noon
+	else if (hours2 == 12)
 	{
 		cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM." << endl;
 	}
-	else if (hours2 == 0) //midnight
+	else if (hours2 == 0)
 	{
 		cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " AM." << endl;
 	}
@@ -293,26 +302,25 @@ void Timezones::regular() {
 				cout << "The current time in " << location << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutess << " PM." << endl;
 				finalhour = hours3;
 			}
-			else if (hours3 == 12) //noon
+			else if (hours3 == 12)
 			{
 				cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " PM." << endl;
 				finalhour = 12;
 			}
-			//Same as hours2 == 24
-			//else if (hours3 == 0) //midnight
-			//{
-			//	cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM." << endl;
-			//	finalhour = 0;
-			//}
+			else if (hours3 == 0)
+			{
+				cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM." << endl;
+				finalhour = 0;
+			}
 			else
 			{
 				cout << "The current time in " << location << " is " << hours3 << ":" << setfill('0') << setw(2) << minutess << " AM." << endl;
 				finalhour = hours3;
 			}
 		}
-		else if (hours2 == 24) //midnight
+		else if (hours2 == 24)
 		{
-			cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM." << endl;
+			cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM the next day." << endl;
 			finalhour = 24;
 		}
 		else if (hours2 > 12)
@@ -320,12 +328,12 @@ void Timezones::regular() {
 			cout << "The current time in " << location << " is " << hours2 - 12 << ":" << setfill('0') << setw(2) << minutess << " PM." << endl;
 			finalhour = hours2;
 		}
-		else if (hours2 == 12) //noon
+		else if (hours2 == 12)
 		{
 			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM." << endl;
 			finalhour = 12;
 		}
-		else if (hours2 == 0) //midnight
+		else if (hours2 == 0)
 		{
 			cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM." << endl;
 			finalhour = 0;
@@ -351,35 +359,34 @@ void Timezones::regular2() {
 		{
 			cout << "The current time in " << wish << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << finalminute << " PM the next day." << endl;
 		}
-		else if (hours3 == 12) //noon the next day
+		else if (hours3 == 12)
 		{
 			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM the next day." << endl;
 		}
-		//Same as hours2 == 24
-		//else if (hours3 == 0) //midnight next day
-		//{
-		//	cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " AM the next day." << endl;
-		//}
+		else if (hours3 == 0)
+		{
+			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " AM the next day." << endl;
+		}
 		else
 		{
 			cout << "The current time in " << wish << " is " << hours3 << ":" << setfill('0') << setw(2) << finalminute << " AM the next day." << endl;
 		}
 	}
-	else if (hours2 == 24) //midnight next day
-	{
-		cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM the next day." << endl;
-	}
 	else if (hours2 > 12)
 	{
 		cout << "The current time in " << wish << " is " << hours2-12 << ":" << setfill('0') << setw(2) << finalminute << " PM." << endl;
 	}
-	else if (hours2 == 12) //noon
+	else if (hours2 == 12)
 	{
 		cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM." << endl;
 	}
-	else if (hours2 == 0) //midnight
+	else if (hours2 == 0)
 	{
 		cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " AM." << endl;
+	}
+	else if (hours2 == 24)
+	{
+		cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM the next day." << endl;
 	}
 	else
 	{
