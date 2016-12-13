@@ -52,10 +52,6 @@ Kathmandu
 Seoul
 		~Sarah*/
 
-/*NOTE TO SELF:
-Fix attractions in City.cpp
-		~Sarah*/
-
 /*
 AM today to AM today
 AM today to PM today
@@ -71,6 +67,7 @@ PM today to AM tomorrow
 	[REGULAR] GOOD
 	[wish KATHMANDU] GOOD
 PM today to PM tomorrow 
+	[REGULAR] GOOD
 
 
 AM tomorrow to AM tomorrow 
@@ -81,6 +78,13 @@ AM tomorrow to PM tomorrow
 	[location KATHMANDU] GOOD
 
 PM tomorrow to PM tomorrow
+	[REGULAR] GOOD
 	
+	-Location Kathmandu is 1hr ahead because of special minutes
+	need more (else if_ for all midnight and noon times
+	-FIGURE OUT CURRENCY
 
 		~Sarah*/
+
+//Kathmandu2() doesn't need to set final hour
+//-Marnie
