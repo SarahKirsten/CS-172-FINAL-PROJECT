@@ -5,13 +5,11 @@ z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\t
 z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(91): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(112): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
 z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(123): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(146): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(162): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(167): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(224): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(227): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(247): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(257): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(270): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(147): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(221): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(224): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(254): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(269): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(282): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   Timezones.vcxproj -> Z:\CS172-1\FINAL PROJECT6\CS-172-FINAL-PROJECT\source_code\Timezones\x64\Debug\Timezones.exe
   Timezones.vcxproj -> Z:\CS172-1\FINAL PROJECT6\CS-172-FINAL-PROJECT\source_code\Timezones\x64\Debug\Timezones.pdb (Full PDB)

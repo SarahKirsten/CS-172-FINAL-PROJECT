@@ -123,6 +123,7 @@ void Timezones::kathmandu() {
 		finalhour = hours2;	
 	}
 	//If the minutes on the Spokane time is > 15 that will cause the hour to increase at the beginning of the function
+	//special case to decrease that hour change
 	if (minutess >= 15)
 	{
 		finalhour = finalhour - 1;
@@ -218,13 +219,18 @@ void Timezones::regular() {
 
 		hours2 = hourss + 8.0 + locationt2;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
 		finalminute = minutess;
-		if (hours2 >= 24)//If city is one-day ahead
+		if (hours2 > 24)//If city is one-day ahead
 		{
 		int hours3 = hours2 - 24;
 			if (hours3 > 12)
 			{
 				cout << "The current time in " << location << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutess << " PM." << endl;
 				finalhour = hours3;
+			}
+			else if (hours3 == 12)
+			{
+				cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM." << endl;
+				finalhour = 12;
 			}
 			else if (hours3 == 0)
 			{
@@ -237,10 +243,20 @@ void Timezones::regular() {
 				finalhour = hours3;
 			}
 		}
+		else if (hours2 == 24)
+		{
+			cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM." << endl;
+			finalhour = 24;
+		}
 		else if (hours2 > 12)
 		{
 			cout << "The current time in " << location << " is " << hours2 - 12 << ":" << setfill('0') << setw(2) << minutess << " PM." << endl;
 			finalhour = hours2;
+		}
+		else if (hours2 == 12)
+		{
+			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM." << endl;
+			finalhour = 12;
 		}
 		else if (hours2 == 0)
 		{
@@ -261,12 +277,16 @@ void Timezones::regular() {
 void Timezones::regular2() {
 
 	hours2 = finalhour - locationt2 + t2;//Hours of city is offset from Spokane to 00:00 plus offset from 00:00 to requested city
-	if (hours2 >= 24)//If city is one-day ahead
+	if (hours2 > 24)//If city is one-day ahead
 	{
 		int hours3 = hours2 - 24;
 		if (hours3 > 12)
 		{
 			cout << "The current time in " << wish << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << finalminute << " PM the next day." << endl;
+		}
+		else if (hours3 == 12)
+		{
+			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM the next day." << endl;
 		}
 		else if (hours3 == 0)
 		{
@@ -281,9 +301,17 @@ void Timezones::regular2() {
 	{
 		cout << "The current time in " << wish << " is " << hours2-12 << ":" << setfill('0') << setw(2) << finalminute << " PM." << endl;
 	}
-	else if (hours2 == 0)
+	else if (hours2 == 12)
 	{
 		cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM." << endl;
+	}
+	else if (hours2 == 0)
+	{
+		cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " AM." << endl;
+	}
+	else if (hours2 == 24)
+	{
+		cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM the next day." << endl;
 	}
 	else
 	{
