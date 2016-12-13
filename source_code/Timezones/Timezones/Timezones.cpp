@@ -44,15 +44,12 @@ void Timezones::compare() {
 		{
 			string time2 = myArray[j - 1];
 			locationt2 = stoi(time2);
-
-			string money = myArray[j + 1];
-			//City::toUSD = stod(money);
 			found = true;
 			break;
 			//cout << "The GMT offset is: " << t2 << endl;
 		}
 	}
-	if (!found)
+	if (!found)//check if city is in text file and searched for through aray correctly
 		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
 }
 
@@ -70,57 +67,56 @@ void Timezones::compare2() {
 			//cout << "The GMT offset is: " << t2 << endl;
 		}
 	}
-	if (!found)
+	if (!found)//check existense of user input in array
 		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
 }
-
+//get currency rate of location city. Changes current currency to USD 
 double Timezones::toUSD()
 {
-	for (int j = 0; j <= 372; j++)
+	for (int j = 0; j <= 372; j++)//searches through array
 	{
 		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
 		{
-			string money = myArray[j + 1];
-			fromOther = stod(money);
-			found = true;
-			break;
-			return fromOther;
+			string money = myArray[j + 1];//look for index next to city name and store as money
+			fromOther = stod(money);//convert string money to double for fromOther 
+			found = true;//if conversion rate is found in array 
+			break;//break so program stops looking through array
+			return fromOther;//return fromOther(currency converted to USD)
 		}
 	}
-	if (!found)
+	if (!found)//check to see if conversion saved into array
+		cout << "Not found fix program" << endl;
 		return 0;
 }
-
+//get converted rate, changes the USD to another wished currency
 double Timezones::fromUSD()
 {
-	for (int j = 0; j <= 372; j++)
+	for (int j = 0; j <= 372; j++)//searches through array
 	{
 		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
 		{
-			string money = myArray[j + 2];
-			toOther = stod(money);
-			found = true;
-			break;
-			return toOther;
+			string money = myArray[j + 2];//look for index of two to the right for the from USD equivalence and store as money
+			//ISSUE WITH STOD
+			toOther = stod(money);//convert string money to double to be used for toOther
+			found = true;//conversion rate fromUSD is found
+			break;//stop looking through array
+			return toOther;//spit out currency equivalence 
 		}
 	}
 	if (!found)
 		return 0;
 }
-
-double USD::fromOther()
+//Anna realizes that these USD functions are inefficient, but can't find a proper solution 
+double USD::fromFormula()
 {
-	double u = money*toUSD();
-	/*othercurr=city.fromOther;
-	u = othercurr*rate;
-	return u;*/
-	return u;
+	double u = money*fromOther;//multiplies user input with foundOther(toUSD rate in array)
+	return u; //returns the equivalence in USD
 }
 
 
-double USD::toOther()
+double USD::toFormula()
 {
-	othercurr = u / rate;
+	othercurr = u /money;
 	return othercurr;
 }
 
@@ -220,6 +216,7 @@ void Timezones::kathmandu2()
 		{
 			cout << "The current time in " << wish << " is " << hours3 << ":" << setfill('0') << setw(2) << finalminute << " AM the next day." << endl;
 		}
+	}
 	else if (hours2 == 24)
 	{
 		cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM the next day." << endl;
@@ -241,7 +238,7 @@ void Timezones::kathmandu2()
 		cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << finalminute << " AM." << endl;
 	}
 }
-}
+
 
 /*dont need this unless future development*/
 //void Timezones::kabul() {
