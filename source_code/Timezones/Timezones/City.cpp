@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void City::getAttractions(string wish)
+void City::getAttractions(string wish)//get attractions for wish city
 {
 	//reads in attractions file
 	ifstream file("Attractions.txt");
@@ -22,7 +22,7 @@ void City::getAttractions(string wish)
 	file.close();
 }
 
-void City::outputAttractions(string wish)
+void City::outputAttractions(string wish)//SHOWS attractions for wish city
 {
 	for (int j = 0; j < 114; j++)
 	{

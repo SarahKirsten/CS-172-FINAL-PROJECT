@@ -9,12 +9,12 @@ using namespace std;
 class City: public Timezones
 {
 private:
-	string cityattractions[114];
+	string cityattractions[114];//array for wish attractions
 
 public:
 
-	void getAttractions(string wish);
-	void outputAttractions(string wish);
+	void getAttractions(string wish);//get attractions for wish city
+	void outputAttractions(string wish);//SHOW attractions for wish city
 	
 };
 

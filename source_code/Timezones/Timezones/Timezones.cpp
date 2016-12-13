@@ -42,10 +42,11 @@ void Timezones::compare() {
 	{
 		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
-			string time2 = myArray[j - 1];
-			locationt2 = stoi(time2);
+			string time2 = myArray[j - 1];//get GMT
+			locationt2 = stoi(time2);//store GMT
 
-			string money = myArray[j + 1];
+			string fromOther = myArray[j + 1];//get toUSD conversion
+			money1 = stod(fromOther);
 			//City::toUSD = stod(money);
 			found = true;
 			break;
@@ -63,8 +64,10 @@ void Timezones::compare2() {
 	{
 		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
-			string time2 = myArray[j - 1];
+			string time2 = myArray[j - 1];//get GMT
 			t2 = stoi(time2);
+			string toOther = myArray[j + 2];//get fromUSD conversion
+			money2 = stod(toOther);
 			found = true;
 			break;
 			//cout << "The GMT offset is: " << t2 << endl;
@@ -76,41 +79,18 @@ void Timezones::compare2() {
 
 double Timezones::toUSD()
 {
-	for (int j = 0; j <= 372; j++)
-	{
-		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
-		{
-			string money = myArray[j + 1];
-			fromOther = stod(money);
-			found = true;
-			break;
-			return fromOther;
-		}
-	}
-	if (!found)
-		return 0;
+			return money1;
+			
 }
 
 double Timezones::fromUSD()
 {
-	for (int j = 0; j <= 372; j++)
-	{
-		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
-		{
-			string money = myArray[j + 2];
-			toOther = stod(money);
-			found = true;
-			break;
-			return toOther;
-		}
-	}
-	if (!found)
-		return 0;
+			return money2;
 }
 
 double USD::fromOther()
 {
-	double u = money*toUSD();
+	double u = money * money1;
 	/*othercurr=city.fromOther;
 	u = othercurr*rate;
 	return u;*/
@@ -120,7 +100,7 @@ double USD::fromOther()
 
 double USD::toOther()
 {
-	othercurr = u / rate;
+	othercurr = u / money2;
 	return othercurr;
 }
 

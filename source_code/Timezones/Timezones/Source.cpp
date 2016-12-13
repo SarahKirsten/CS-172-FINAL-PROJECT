@@ -3,7 +3,7 @@
 #include "City.h"//Including class for City
 
 
-
+/*Dont need these here*/
 //void fileinput();
 //void compare();
 //void kathmandu();
@@ -14,18 +14,18 @@
 
 int main()
 {
-	
-	int v = 0;
+
+	int v = 0;//# of program runs
 	cout << "How many time changes do you want to see? ";
 	cin >> v;
 
-	for (int d = 0; d < v; d++) {
+	for (int d = 0; d < v; d++) {//loop until want to end program
 		Timezones city;
 		USD city2;
-		city2.money = city.money
+		city2.money1 = city.money1;
 		City attractions;
 		/*city.setWish();*/
-		city.fileinput();
+		city.fileinput();//read in GMT city toUSD fromUSD
 
 
 
@@ -37,43 +37,41 @@ int main()
 		//cout << endl << money << endl;
 
 
-		cout << "Money conversion: " << city.toUSD() << endl;
-		city.current();
-		city.compare();
-		city.compare2();
-		cout << "Money conversion: " << city.fromUSD() << endl;
-		cout << "Money after conversion: " << city.toOther() << endl;
-		attractions.getAttractions(city.wish);
-		attractions.outputAttractions(city.wish);
+		city.current();//computer time
+		city.compare();//get GMT of location city
+		cout << "Money conversion: " << city2.fromOther() << endl;//location money to USD money
+		city.compare2();//get GMT of wish city
+		cout << "Money conversion: " << city2.toOther() << endl;//USD money to wish money
+		cout << "Money after conversion: " << city2.fromOther() << endl << endl;//USD money to wish money
+		attractions.getAttractions(city.wish);//get attractions for wish city
+		attractions.outputAttractions(city.wish);//SHOW attractions for wish city
 
-		//city.getGMT();
+
 		//computer time to location time
 		if (city.location == "Kathmandu")//If specific city is Kathmandu, because weird time zone
 		{
-			city.kathmandu();//calls function of kathmandu
+			city.kathmandu();//calls function of location kathmandu
 		}
 
-		/*else if (city.location == "Spokane" || city.location == "Seattle" || city.location == "LosAngeles" || city.location == "SanDiego")
-			city.sameplace();*/
 		else
 		{
-			city.regular();//calls function for regular timezones
+			city.regular();//calls function of location regular cities
 		}
 
 
 
-		if (city.wish == "Kathmandu")
+		if (city.wish == "Kathmandu")//weird time zone
 		{
-			city.kathmandu2();
+			city.kathmandu2();//calls function of wish kathmandu
 		}
 		else
 		{
-			city.regular2();
+			city.regular2();//calls function of wish regular cities
 		}
-		
-		cout << endl << endl;
-}
-	return 0;
+
+		cout << endl << endl;//adds spaces between program runs
+	}
+	/*dont need unless future development*/
 		//else if (city.wish == "Kabul")//is kabul, because weird time zone
 		//{
 		//	city.kabul();//calls function of kabul
@@ -81,7 +79,8 @@ int main()
 		//else if (city.wish == "Calcutta" || city.wish == "NewDelhi" || city.wish == "Colombo")//weird timezone
 		//{
 		//	city.calcutta();//calls function because weird timezone
-		}
+	return 0;
+}
 
 
 

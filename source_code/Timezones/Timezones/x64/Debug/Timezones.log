@@ -1,26 +1,2 @@
-﻿  Timezones.cpp
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(28): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(505): note: see declaration of 'localtime'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(170): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(173): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(194): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(205): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(228): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(249): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(259): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(316): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(319): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(339): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(349): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(362): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  City.cpp
-  Generating Code...
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(89): warning C4715: 'Timezones::toUSD': not all control paths return a value
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(106): warning C4715: 'Timezones::fromUSD': not all control paths return a value
-  Compiling...
-  Source.cpp
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(25): error C2039: 'money': is not a member of 'Timezones'
-  c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.h(14): note: see declaration of 'Timezones'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(35): error C2039: 'money': is not a member of 'Timezones'
-  c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\timezones.h(14): note: see declaration of 'Timezones'
-  Generating Code...
+﻿  Source.cpp
+  Timezones.vcxproj -> C:\Users\Sarah\Source\Repos\CS-172-FINAL-PROJECT\source_code\Timezones\x64\Debug\Timezones.exe
