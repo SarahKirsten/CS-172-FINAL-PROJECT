@@ -79,10 +79,16 @@ double Timezones::toUSD()
 		{
 			string money = myArray[j + 1];//look for index next to city name and store as money
 			fromOther = stod(money);//convert string money to double for fromOther 
+			return fromOther;//return fromOther(currency converted to USD)
 			found = true;//if conversion rate is found in array 
+<<<<<<< HEAD:source_code/Timezones/enc_temp_folder/cf4be7491d2b203e25e1e0951f2b56/Timezones.cpp
 		//break so program stops looking through array
 			return fromOther;//return fromOther(currency converted to USD)
 			break;
+=======
+			break;//break so program stops looking through array
+			
+>>>>>>> origin/master:source_code/Timezones/Timezones/Timezones.cpp
 		}
 	}
 	if (!found)//check to see if conversion saved into array
@@ -99,9 +105,13 @@ double Timezones::fromUSD()
 			string money = myArray[j + 2];//look for index of two to the right for the from USD equivalence and store as money
 			//ISSUE WITH STOD
 			toOther = stod(money);//convert string money to double to be used for toOther
+			return toOther;//spit out currency equivalence 
 			found = true;//conversion rate fromUSD is found
 			break;//stop looking through array
+<<<<<<< HEAD:source_code/Timezones/enc_temp_folder/cf4be7491d2b203e25e1e0951f2b56/Timezones.cpp
 			return toOther;//spit out currency equivalence 
+=======
+>>>>>>> origin/master:source_code/Timezones/Timezones/Timezones.cpp
 			
 		}
 	}
@@ -111,14 +121,18 @@ double Timezones::fromUSD()
 //Anna realizes that these USD functions are inefficient, but can't find a proper solution 
 double USD::fromFormula()
 {
-	double u = money*fromOther;//multiplies user input with foundOther(toUSD rate in array)
+	double u = money1 * fromOther;//multiplies user input with foundOther(toUSD rate in array)
 	return u; //returns the equivalence in USD
 }
 
 
 double USD::toFormula()
 {
+<<<<<<< HEAD:source_code/Timezones/enc_temp_folder/cf4be7491d2b203e25e1e0951f2b56/Timezones.cpp
 	othercurr = u /money;//takes u from fromFormula function and divides by user input to return wished currency
+=======
+	othercurr = u /toOther;
+>>>>>>> origin/master:source_code/Timezones/Timezones/Timezones.cpp
 	return othercurr;
 }
 
