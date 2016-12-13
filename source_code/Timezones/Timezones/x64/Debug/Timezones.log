@@ -1,15 +1,57 @@
 ﻿  Timezones.cpp
 z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(28): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(505): note: see declaration of 'localtime'
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(88): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(91): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(112): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(123): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(147): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(221): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(224): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(254): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(269): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(282): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  Timezones.vcxproj -> Z:\CS172-1\FINAL PROJECT6\CS-172-FINAL-PROJECT\source_code\Timezones\x64\Debug\Timezones.exe
-  Timezones.vcxproj -> Z:\CS172-1\FINAL PROJECT6\CS-172-FINAL-PROJECT\source_code\Timezones\x64\Debug\Timezones.pdb (Full PDB)
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(77): error C2039: 'toUSD': is not a member of 'Timezones'
+  z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.h(14): note: see declaration of 'Timezones'
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(81): error C2065: 'location': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(81): error C2228: left of '.compare' must have class/struct/union
+  z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(81): note: type is 'unknown-type'
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(81): error C2065: 'myArray': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(83): error C2065: 'myArray': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(84): error C2065: 'fromOther': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(85): error C2065: 'found': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(87): error C2065: 'fromOther': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(90): error C2065: 'found': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(94): error C2039: 'fromUSD': is not a member of 'Timezones'
+  z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.h(14): note: see declaration of 'Timezones'
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(98): error C2065: 'wish': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(98): error C2228: left of '.compare' must have class/struct/union
+  z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(98): note: type is 'unknown-type'
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(98): error C2065: 'myArray': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(100): error C2065: 'myArray': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(101): error C2065: 'toOther': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(102): error C2065: 'found': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(104): error C2065: 'toOther': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(107): error C2065: 'found': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(111): error C2653: 'USD': is not a class or namespace name
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(113): error C2065: 'money': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(121): error C2653: 'USD': is not a class or namespace name
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(123): error C2065: 'othercurr': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(123): error C2065: 'u': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(123): error C2065: 'rate': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(124): error C2065: 'othercurr': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(137): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(140): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(171): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(182): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(206): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(223): error C2181: illegal else without matching if
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(299): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(302): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(332): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(347): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\timezones.cpp(360): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  City.cpp
+  Generating Code...
+  Compiling...
+  Source.cpp
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\source.cpp(24): error C2065: 'USD': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\source.cpp(24): error C2146: syntax error: missing ';' before identifier 'convertcurrency'
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\source.cpp(24): error C2065: 'convertcurrency': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\source.cpp(40): error C2065: 'convertcurrency': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\source.cpp(40): error C2228: left of '.getCurrencyto' must have class/struct/union
+  z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\source.cpp(40): note: type is 'unknown-type'
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\source.cpp(49): error C2065: 'convertcurrency': undeclared identifier
+z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\source.cpp(49): error C2228: left of '.getCurrencyfrom' must have class/struct/union
+  z:\cs172-1\final project6\cs-172-final-project\source_code\timezones\timezones\source.cpp(49): note: type is 'unknown-type'
+  Generating Code...

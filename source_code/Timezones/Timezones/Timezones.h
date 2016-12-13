@@ -16,20 +16,21 @@ protected:
 	string myArray[372];
 	string city;
 	bool found = false;
-	//double fromOther;
-	//double toOther;
 	ifstream fileOfCities;
 	int countLine;
+
 public:
 	double hourss, minutess, hours2, minutes2, t2, time2;
+	double money;
+	double fromOther, toOther;
 	double locationt2;
 	int finalhour;
 	int finalminute;
 	string location;
 	string wish;
-	//Implemented in city class virtual double toUSD();
-	//Implemented in city class  double fromUSD();
 
+	double toUSD();
+	double fromUSD();
 	void fileinput();
 	void current();
 	void compare();
@@ -41,6 +42,17 @@ public:
 	void regular();
 	void regular2();
 	//double getGMT();
+};
+
+class USD :public Timezones
+{
+protected:
+	double rate, othercurr;
+
+public:
+	double u;
+	double fromOther();
+	double toOther();
 };
 
 

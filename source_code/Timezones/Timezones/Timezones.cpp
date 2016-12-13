@@ -74,6 +74,55 @@ void Timezones::compare2() {
 		cout << "The city you input does not exist in this universe or is not capitalized." << endl << endl;
 }
 
+double Timezones::toUSD()
+{
+	for (int j = 0; j <= 372; j++)
+	{
+		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
+		{
+			string money = myArray[j + 1];
+			fromOther = stod(money);
+			found = true;
+			break;
+			return fromOther;
+		}
+	}
+	if (!found)
+		return 0;
+}
+
+double Timezones::fromUSD()
+{
+	for (int j = 0; j <= 372; j++)
+	{
+		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
+		{
+			string money = myArray[j + 2];
+			toOther = stod(money);
+			found = true;
+			break;
+			return toOther;
+		}
+	}
+	if (!found)
+		return 0;
+}
+
+double USD::fromOther()
+{
+	double u = money*toUSD();
+	/*othercurr=city.fromOther;
+	u = othercurr*rate;
+	return u;*/
+	return u;
+}
+
+
+double USD::toOther()
+{
+	othercurr = u / rate;
+	return othercurr;
+}
 
 //change computer time to location kathmandu time
 void Timezones::kathmandu() {
