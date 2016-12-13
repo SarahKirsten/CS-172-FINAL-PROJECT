@@ -27,3 +27,60 @@ going backwards hurts
 //and open and use already stored text file array.
 //Open text file, pull from usd and to usd. Goes through toUSD(), through fromUSD().
 //-Anna
+
+/*
+cities with attractions in attractions.txt:
+
+Honolulu
+Juneau
+Adak
+LosAngeles
+SanDiego
+Seattle
+Spokane
+Phoenix
+SaltLakeCity
+Chicago
+Dallas
+NewOrleans
+Boston
+Miami
+NewYork
+London
+Paris
+Kathmandu
+Seoul
+		~Sarah*/
+
+/*NOTE TO SELF:
+Fix attractions in City.cpp
+		~Sarah*/
+
+/*
+AM today to AM today
+AM today to PM today
+	[REGULAR] GOOD
+AM today to AM tomorrow 
+	[wish KATHMANDU] GOOD
+AM today to PM tomorrow
+
+
+PM today to PM today 
+	[REGULAR] GOOD
+PM today to AM tomorrow 
+	[REGULAR] GOOD
+	[wish KATHMANDU] GOOD
+PM today to PM tomorrow 
+
+
+AM tomorrow to AM tomorrow 
+	[REGULAR] GOOD
+	[wish KATHMANDU] GOOD
+AM tomorrow to PM tomorrow
+	[REGULAR] GOOD
+	[location KATHMANDU] GOOD
+
+PM tomorrow to PM tomorrow
+	
+
+		~Sarah*/
