@@ -209,20 +209,20 @@ void Timezones::kathmandu2()
 		}
 		else if (hours3 == 12)
 		{
-			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM the next day." << endl;
+			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM the next day." << endl;
 		}
 		else if (hours3 == 0)
 		{
-			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " AM the next day." << endl;
+			cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << minutes2 << " AM the next day." << endl;
 		}
 		else
 		{
-			cout << "The current time in " << wish << " is " << hours3 << ":" << setfill('0') << setw(2) << finalminute << " AM the next day." << endl;
+			cout << "The current time in " << wish << " is " << hours3 << ":" << setfill('0') << setw(2) << minutes2 << " AM the next day." << endl;
 		}
 	}
 	else if (hours2 == 24)
 	{
-		cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutess << " AM the next day." << endl;
+		cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutes2 << " AM the next day." << endl;
 	}
 	else if (hours2 > 12)
 	{
@@ -230,15 +230,15 @@ void Timezones::kathmandu2()
 	}
 	else if (hours2 == 12)
 	{
-		cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " PM." << endl;
+		cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM." << endl;
 	}
 	else if (hours2 == 0)
 	{
-		cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << finalminute << " AM." << endl;
+		cout << "The current time in " << wish << " is " << 12 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
 	}
 	else
 	{
-		cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << finalminute << " AM." << endl;
+		cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
 	}
 }
 

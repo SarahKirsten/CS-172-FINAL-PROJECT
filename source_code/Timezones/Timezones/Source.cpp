@@ -46,7 +46,7 @@ int main()
 		city2.fromOther = city.toUSD();
 		city2.toOther = city.fromUSD();
 
-		cout << "Money (in USD) after conversion: " << city2.fromFormula() << " " << "USD" << endl;//USD money to wish money
+		cout << "Money (in USD) after conversion: " << city2.fromFormula() << " USD" << endl;//USD money to wish money
 		cout << "Money (in local currency) after conversion: " << setprecision(2) << fixed << city2.toFormula() << " " << city.currency << endl << endl;//USD money to wish money
 
 		attractions.getAttractions(city.wish);//get attractions for wish city
