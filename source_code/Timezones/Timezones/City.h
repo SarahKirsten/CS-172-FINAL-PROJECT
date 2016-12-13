@@ -2,6 +2,7 @@
 #include<iostream>
 #include<fstream>
 #include<string>
+#include"Timezones.h"
 
 using namespace std;
 
@@ -14,11 +15,10 @@ public:
 
 	void getWish();
 	void getAttractions(string wish);
-	double virtual toUSD();
-	double virtual fromUSD();
+	
 };
 
-class USD
+class USD:public Timezones
 {
 protected:
 	double rate, u, othercurr;
@@ -27,13 +27,16 @@ public:
 	double virtual toUSD()=0;
 	double virtual fromUSD() = 0;
 	
-	friend class Timezones;// NOT SURE IF THIS IS CORRECT
+	void getCurrency(string wish);
 
 };
-class OtherCurrency:public USD
+
+/*
+class Currency:public Timezones
 {
 public: 
 
-	double convertToCurrency();
+	void getCurrency(string wish);
 
 };
+*/

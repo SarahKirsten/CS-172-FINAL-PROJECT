@@ -2,6 +2,8 @@
 #include"City.h"
 #include<fstream>
 #include<string>
+#include"Timezones.h"
+
 using namespace std;
 
 void City::getWish()
@@ -48,7 +50,19 @@ double USD::fromUSD()
 	return othercurr;
 }
 
-/*double OtherCurrency::convertToCurrency()
+void USD::getCurrency(string wish)
 {
-	
-}*/
+	for (int j = 0; j <= 372; j+4)//reads every fourth byte for 
+	{
+		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
+		{
+			string money = myArray[j]; 
+			
+			found = true;
+			break;
+			cout << "The money equivalent is " << /*c2 <<*/ endl;
+		}
+	}
+	if (!found)
+		cout << "Currency conversion not found" << endl << endl;
+}

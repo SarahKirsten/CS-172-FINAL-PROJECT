@@ -1,11 +1,5 @@
-﻿  Source.cpp
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2059: syntax error: 'for'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2143: syntax error: missing ')' before ';'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2143: syntax error: missing ';' before '<'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2143: syntax error: missing ';' before '++'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2086: 'int i': redefinition
-  c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): note: see declaration of 'i'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2059: syntax error: ')'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2143: syntax error: missing ';' before '{'
-c:\users\anna\source\repos\cs-172-final-project\source_code\timezones\timezones\source.cpp(13): error C2447: '{': missing function header (old-style formal list?)
+﻿  City.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Source.cpp
+  Timezones.vcxproj -> C:\Users\Anna\Source\Repos\CS-172-FINAL-PROJECT\source_code\Timezones\x64\Debug\Timezones.exe

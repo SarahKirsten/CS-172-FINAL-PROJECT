@@ -12,12 +12,12 @@ using namespace std;
 
 class Timezones
 {
-private:
+protected:
 	string myArray[372];
 	string city;
 	bool found = false;
-	double fromOther;
-	double toOther;
+	//double fromOther;
+	//double toOther;
 	ifstream fileOfCities;
 	int countLine;
 public:

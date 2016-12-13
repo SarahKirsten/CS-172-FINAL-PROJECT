@@ -14,7 +14,7 @@
 
 int main()
 {
-	
+	//for (int i = 0; i < 10; i++) {
 		Timezones city;
 		/*city.setWish();*/
 		city.fileinput();
@@ -38,7 +38,6 @@ int main()
 		city.compare();
 		city.compare2();
 		//city.getGMT();
-
 		//computer time to location time
 		if (city.location == "Kathmandu")//If specific city is Kathmandu, because weird time zone
 		{
@@ -63,7 +62,7 @@ int main()
 			city.regular2();
 		}
 		return 0;
-
+}
 
 		//else if (city.wish == "Kabul")//is kabul, because weird time zone
 		//{
@@ -73,7 +72,6 @@ int main()
 		//{
 		//	city.calcutta();//calls function because weird timezone
 		//}
-	}
-}
+
 
 
