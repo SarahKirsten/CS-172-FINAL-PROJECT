@@ -14,7 +14,12 @@
 
 int main()
 {
-	//for (int i = 0; i < 10; i++) {
+	
+	int v = 0;
+	cout << "How many time changes do you want to see? ";
+	cin >> v;
+
+	for (int d = 0; d < v; d++) {
 		Timezones city;
 		USD convertcurrency;
 		/*city.setWish();*/
@@ -25,7 +30,7 @@ int main()
 
 
 		cout << "What is your current city? ";
-		getline(cin, city.location);
+		cin >> city.location;
 		//cout << endl << location << endl;
 		cout << "How much money will be with you? ";
 		cin >> money;//remember this is local currency, need change to USD
@@ -76,7 +81,7 @@ int main()
 		//else if (city.wish == "Calcutta" || city.wish == "NewDelhi" || city.wish == "Colombo")//weird timezone
 		//{
 		//	city.calcutta();//calls function because weird timezone
-		//}
+		}
 
 
 
