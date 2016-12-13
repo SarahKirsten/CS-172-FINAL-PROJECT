@@ -20,7 +20,7 @@ void City::getAttractions(string wish)
 	ifstream file("Attractions.txt");
 	if (file.is_open())
 	{
-		for (int i = 0; i < 372; ++i)
+		for (int i = 0; i < 114; ++i)
 		{
 			//reads in the city then the string of attractions
 			file >> city /*>> " " */>> attractions; /*note from Sarah: the program doesn't like ( >> " " )*/

@@ -43,7 +43,7 @@ void Timezones::compare() {
 		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
 			string time2 = myArray[j - 1];
-			locationt2 = stoi(time2);
+			locationt2 = stod(time2);
 			found = true;
 			break;
 			//cout << "The GMT offset is: " << t2 << endl;
@@ -61,7 +61,7 @@ void Timezones::compare2() {
 		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
 		{
 			string time2 = myArray[j - 1];
-			t2 = stoi(time2);
+			t2 = stod(time2);
 			found = true;
 			break;
 			//cout << "The GMT offset is: " << t2 << endl;
@@ -217,7 +217,7 @@ void Timezones::regular() {
 		if (hours2 >= 24)//If city is one-day ahead
 		{
 		int hours3 = hours2 - 24;
-			if (hours3 >= 12)
+			if (hours3 > 12)
 			{
 				cout << "The current time in " << location << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutess << " PM." << endl;
 				finalhour = hours3 + 12;
@@ -260,7 +260,7 @@ void Timezones::regular2() {
 	if (hours2 >= 24)//If city is one-day ahead
 	{
 		int hours3 = hours2 - 24;
-		if (hours3 >= 12)
+		if (hours3 > 12)
 		{
 			cout << "The current time in " << wish << " is " << 24 - hours3 << ":" << setfill('0') << setw(2) << finalminute << " PM the next day." << endl;
 		}
