@@ -122,6 +122,11 @@ void Timezones::kathmandu() {
 		cout << "The current time in " << location << " is " << hours2 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
 		finalhour = hours2;	
 	}
+	//If the minutes on the Spokane time is > 15 that will cause the hour to increase at the beginning of the function
+	if (minutess >= 15)
+	{
+		finalhour = finalhour - 1;
+	}
 }
 
 
@@ -142,24 +147,20 @@ void Timezones::kathmandu2()
 		if (hours3 >= 12)
 		{
 			cout << "The current time in " << wish << " is " << hours3 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM the next day." << endl;
-			finalhour = hours3 - 12;
 		}
 		else
 		{
 			cout << "The current time in " << wish << " is " << hours3 << ":" << setfill('0') << setw(2) << minutes2 << " AM the next day." << endl;
-			finalhour = hours3;
 		}
 
 	}
 	else if (hours2 >= 12)
 	{
 		cout << "The current time in " << wish << " is " << hours2 - 12 << ":" << setfill('0') << setw(2) << minutes2 << " PM." << endl;
-		finalhour = hours2;
 	}
 	else
 	{
 		cout << "The current time in " << wish << " is " << hours2 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
-		finalhour = hours2;
 	}
 }
 

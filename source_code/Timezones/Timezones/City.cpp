@@ -43,7 +43,6 @@ void City::outputAttractions(string wish)
 			break;
 		}	
 	}
-	cout << "Could not find attractions for " << wish << endl;
 }
 
 /*double USD::toUSD()
