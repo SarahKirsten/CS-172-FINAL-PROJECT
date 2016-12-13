@@ -59,16 +59,28 @@ Fix attractions in City.cpp
 /*
 AM today to AM today
 AM today to PM today
+	[REGULAR] GOOD
 AM today to AM tomorrow 
+	[wish KATHMANDU] GOOD
 AM today to PM tomorrow
 
 
 PM today to PM today 
+	[REGULAR] GOOD
 PM today to AM tomorrow 
+	[REGULAR] GOOD
+	[wish KATHMANDU] GOOD
 PM today to PM tomorrow 
 
 
 AM tomorrow to AM tomorrow 
+	[REGULAR] GOOD
+	[wish KATHMANDU] GOOD
 AM tomorrow to PM tomorrow
+	[REGULAR] GOOD
+	[location KATHMANDU] GOOD
+
+PM tomorrow to PM tomorrow
+	
 
 		~Sarah*/

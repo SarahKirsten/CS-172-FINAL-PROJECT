@@ -94,7 +94,7 @@ void Timezones::kathmandu() {
 		else if (hours3 == 0)
 		{
 			cout << "The current time in " << location << " is " << 12 << ":" << setfill('0') << setw(2) << minutes2 << " AM." << endl;
-			finalhour = 12;
+			finalhour = 24;
 		}
 		else
 		{
