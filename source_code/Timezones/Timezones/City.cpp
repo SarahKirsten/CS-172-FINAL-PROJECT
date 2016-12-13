@@ -38,7 +38,7 @@ void City::getAttractions(string wish)
 	file.close();
 }
 
-double USD::toUSD()
+/*double USD::toUSD()
 {
 	u = othercurr*rate;
 	return u;
@@ -48,21 +48,39 @@ double USD::fromUSD()
 {
 	othercurr = u / rate;
 	return othercurr;
-}
+}*/
 
-void USD::getCurrency(string wish)
+void USD::getCurrencyto(string location)
 {
-	for (int j = 0; j <= 372; j+4)//reads every fourth byte for 
+	for (int j = 0; j <= 372; j++)//reads every fourth byte for 
 	{
-		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding GMT time conversion as t2
+		if (location.compare(myArray[j]) == 0)//if the same as an element, saves corresponding toUSD
 		{
-			string money = myArray[j]; 
-			
+			string money = myArray[j+1]; 
+			toUSD = stod(money);
 			found = true;
 			break;
-			cout << "The money equivalent is " << /*c2 <<*/ endl;
+			cout <<  endl;
 		}
 	}
 	if (!found)
 		cout << "Currency conversion not found" << endl << endl;
 }
+
+void USD::getCurrencyfrom(string wish)
+{
+	for (int j = 0; j <= 372; j++)
+	{
+		if (wish.compare(myArray[j]) == 0)//if the same as an element, saves corresponding fromUSD 
+		{
+			string money = myArray[j + 2];
+			fromUSD = stod(money);
+			found = true;
+			break;
+			cout << endl;
+		}
+	}
+	if (!found)
+		cout << "Currency conversion not found" << endl << endl;
+}
+

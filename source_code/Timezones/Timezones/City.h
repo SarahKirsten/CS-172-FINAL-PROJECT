@@ -11,6 +11,7 @@ class City
 private:
 	string city;
 	string attractions;
+	bool found = false;
 public:
 
 	void getWish();
@@ -24,10 +25,11 @@ protected:
 	double rate, u, othercurr;
 
 public:
-	double virtual toUSD()=0;
-	double virtual fromUSD() = 0;
+	double toUSD;
+	double fromUSD;
 	
-	void getCurrency(string wish);
+	void getCurrencyto(string location);
+	void getCurrencyfrom(string wish);
 
 };
 

@@ -16,6 +16,7 @@ int main()
 {
 	//for (int i = 0; i < 10; i++) {
 		Timezones city;
+		USD convertcurrency;
 		/*city.setWish();*/
 		city.fileinput();
 
@@ -30,6 +31,8 @@ int main()
 		cin >> money;//remember this is local currency, need change to USD
 		//cout << endl << money << endl;
 
+		convertcurrency.getCurrencyto(city.location);
+
 
 
 
@@ -37,6 +40,8 @@ int main()
 		city.current();
 		city.compare();
 		city.compare2();
+		convertcurrency.getCurrencyfrom(city.wish);
+
 		//city.getGMT();
 		//computer time to location time
 		if (city.location == "Kathmandu")//If specific city is Kathmandu, because weird time zone
