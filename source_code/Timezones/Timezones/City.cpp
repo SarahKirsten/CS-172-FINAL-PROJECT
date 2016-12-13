@@ -12,21 +12,30 @@ void City::getAttractions(string wish)
 	ifstream file("Attractions.txt");
 	if (file.is_open())
 	{
-		for (int i = 0; i < 114; ++i)
+		for (int i = 0; i < 114; i++)
 		{
-			//reads in the city then the string of attractions
-			file >> city /*>> " " */>> attractions; /*note from Sarah: the program doesn't like ( >> " " )*/
-
-			//finds the line of code with the wished city
-			if (city.compare(wish) == 0)
-			{
-				cout << "The top five attractions for " << wish << " are ";
-				//outputs the string of attractions
-				cout << attractions << endl;
-			}
+			//reads in the file that contains the cities and their top 5 attractions
+			file >> cityattractions[i];
 		}
 	}
 	//close file
 	file.close();
 }
+
+void City::outputAttractions(string wish)
+{
+	for (int j = 0; j < 114; j++)
+	{
+		if (wish.compare(cityattractions[j]) == 0)
+		{
+			cout << "The top 5 attractions for " << wish << " are:" << endl;
+			cout << cityattractions[j + 1] << endl << cityattractions[j + 2] << endl << cityattractions[j + 3]
+				<< endl << cityattractions[j + 4] << endl << cityattractions[j + 5] << endl << endl;
+
+			break;
+		}	
+	}
+}
+
+
 

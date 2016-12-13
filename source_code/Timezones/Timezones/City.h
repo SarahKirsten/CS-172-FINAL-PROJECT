@@ -6,17 +6,15 @@
 
 using namespace std;
 
-class City
+class City: public Timezones
 {
 private:
-	string city;
-	string attractions;
-	bool found = false;
+	string cityattractions[114];
+
 public:
 
-	void getWish();
 	void getAttractions(string wish);
+	void outputAttractions(string wish);
 	
 };
-
 

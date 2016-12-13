@@ -22,7 +22,8 @@ int main()
 	for (int d = 0; d < v; d++) {
 		Timezones city;
 		USD city2;
-		city2.money = city.money;
+		city2.money = city.money
+		City attractions;
 		/*city.setWish();*/
 		city.fileinput();
 
@@ -35,18 +36,16 @@ int main()
 		cin >> city.money;//remember this is local currency, need change to USD
 		//cout << endl << money << endl;
 
-		//convertcurrency.getCurrencyto(city.location);
-		
 
-
-
-		
 		cout << "Money conversion: " << city.toUSD() << endl;
 		city.current();
 		city.compare();
 		city.compare2();
 		cout << "Money conversion: " << city.fromUSD() << endl;
-		cout << "Money after conversion: " << city2.toOther() << endl;
+		cout << "Money after conversion: " << city.toOther() << endl;
+		attractions.getAttractions(city.wish);
+		attractions.outputAttractions(city.wish);
+
 		//city.getGMT();
 		//computer time to location time
 		if (city.location == "Kathmandu")//If specific city is Kathmandu, because weird time zone
@@ -71,9 +70,10 @@ int main()
 		{
 			city.regular2();
 		}
-		return 0;
+		
+		cout << endl << endl;
 }
-
+	return 0;
 		//else if (city.wish == "Kabul")//is kabul, because weird time zone
 		//{
 		//	city.kabul();//calls function of kabul

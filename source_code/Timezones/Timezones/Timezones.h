@@ -18,16 +18,17 @@ protected:
 	bool found = false;
 	ifstream fileOfCities;
 	int countLine;
-	
+
 public:
 	double hourss, minutess, hours2, minutes2, t2, time2;
+	double money;
 	double fromOther, toOther;
 	double locationt2;
 	int finalhour;
 	int finalminute;
 	string location;
 	string wish;
-		
+
 	double toUSD();
 	double fromUSD();
 	void fileinput();
@@ -52,9 +53,7 @@ public:
 	double u;
 	double fromOther();
 	double toOther();
-	double money;
 };
-
 
 
 
